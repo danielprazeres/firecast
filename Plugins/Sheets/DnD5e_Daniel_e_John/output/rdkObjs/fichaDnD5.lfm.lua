@@ -729,6 +729,29 @@ local function constructNew_frmDnD5()
     obj.dataLink3:setFields({'atributos.modforca', 'bonusProficiencia', 'pericias.atletismo'});
     obj.dataLink3:setName("dataLink3");
 
+    obj.flowLayout5 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout5:setParent(obj.fraLayAtributos);
+    obj.flowLayout5:setLeft(20);
+    obj.flowLayout5:setTop(20);
+    obj.flowLayout5:setWidth(250);
+    obj.flowLayout5:setAutoHeight(true);
+    obj.flowLayout5:setOrientation("horizontal");
+    obj.flowLayout5:setName("flowLayout5");
+    obj.flowLayout5:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout5:setVertAlign("leading");
+
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button1:setParent(obj.flowLayout5);
+    obj.button1:setText("Teste de Resistência");
+    obj.button1:setWidth(130);
+    obj.button1:setName("button1");
+
+    obj.button2 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button2:setParent(obj.flowLayout5);
+    obj.button2:setText("Atletismo");
+    obj.button2:setWidth(130);
+    obj.button2:setName("button2");
+
     obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink4:setParent(obj.fraLayAtributos);
     obj.dataLink4:setField("atributos.destreza");
@@ -789,18 +812,18 @@ local function constructNew_frmDnD5()
     obj.label11:setName("label11");
     obj.label11:setFontColor("white");
 
-    obj.flowLayout5 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout5:setParent(obj.flowPart7);
-    obj.flowLayout5:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout5:setAutoHeight(true);
-    obj.flowLayout5:setLineSpacing(0);
-    obj.flowLayout5:setHorzAlign("leading");
-    obj.flowLayout5:setName("flowLayout5");
-    obj.flowLayout5:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout5:setVertAlign("leading");
+    obj.flowLayout6 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout6:setParent(obj.flowPart7);
+    obj.flowLayout6:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout6:setAutoHeight(true);
+    obj.flowLayout6:setLineSpacing(0);
+    obj.flowLayout6:setHorzAlign("leading");
+    obj.flowLayout6:setName("flowLayout6");
+    obj.flowLayout6:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout6:setVertAlign("leading");
 
     obj.flowPart8 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart8:setParent(obj.flowLayout5);
+    obj.flowPart8:setParent(obj.flowLayout6);
     obj.flowPart8:setMinWidth(206);
     obj.flowPart8:setMaxWidth(250);
     obj.flowPart8:setHeight(17);
@@ -856,12 +879,12 @@ local function constructNew_frmDnD5()
     obj.label13:setFontColor("white");
 
     obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink5:setParent(obj.flowLayout5);
+    obj.dataLink5:setParent(obj.flowLayout6);
     obj.dataLink5:setFields({'atributos.moddestreza', 'bonusProficiencia', 'resistencias.destreza'});
     obj.dataLink5:setName("dataLink5");
 
     obj.flowPart9 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart9:setParent(obj.flowLayout5);
+    obj.flowPart9:setParent(obj.flowLayout6);
     obj.flowPart9:setMinWidth(206);
     obj.flowPart9:setMaxWidth(250);
     obj.flowPart9:setHeight(17);
@@ -917,12 +940,12 @@ local function constructNew_frmDnD5()
     obj.label15:setFontColor("white");
 
     obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink6:setParent(obj.flowLayout5);
+    obj.dataLink6:setParent(obj.flowLayout6);
     obj.dataLink6:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.acrobacia'});
     obj.dataLink6:setName("dataLink6");
 
     obj.flowPart10 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart10:setParent(obj.flowLayout5);
+    obj.flowPart10:setParent(obj.flowLayout6);
     obj.flowPart10:setMinWidth(206);
     obj.flowPart10:setMaxWidth(250);
     obj.flowPart10:setHeight(17);
@@ -978,12 +1001,12 @@ local function constructNew_frmDnD5()
     obj.label17:setFontColor("white");
 
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink7:setParent(obj.flowLayout5);
+    obj.dataLink7:setParent(obj.flowLayout6);
     obj.dataLink7:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.furtividade'});
     obj.dataLink7:setName("dataLink7");
 
     obj.flowPart11 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart11:setParent(obj.flowLayout5);
+    obj.flowPart11:setParent(obj.flowLayout6);
     obj.flowPart11:setMinWidth(206);
     obj.flowPart11:setMaxWidth(250);
     obj.flowPart11:setHeight(17);
@@ -1039,9 +1062,44 @@ local function constructNew_frmDnD5()
     obj.label19:setFontColor("white");
 
     obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink8:setParent(obj.flowLayout5);
+    obj.dataLink8:setParent(obj.flowLayout6);
     obj.dataLink8:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.prestidigitacao'});
     obj.dataLink8:setName("dataLink8");
+
+    obj.flowLayout7 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout7:setParent(obj.fraLayAtributos);
+    obj.flowLayout7:setLeft(20);
+    obj.flowLayout7:setTop(20);
+    obj.flowLayout7:setWidth(250);
+    obj.flowLayout7:setAutoHeight(true);
+    obj.flowLayout7:setOrientation("horizontal");
+    obj.flowLayout7:setName("flowLayout7");
+    obj.flowLayout7:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout7:setVertAlign("leading");
+
+    obj.button3 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button3:setParent(obj.flowLayout7);
+    obj.button3:setText("Teste de Resistência");
+    obj.button3:setWidth(130);
+    obj.button3:setName("button3");
+
+    obj.button4 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button4:setParent(obj.flowLayout7);
+    obj.button4:setText("Acrobacia");
+    obj.button4:setWidth(130);
+    obj.button4:setName("button4");
+
+    obj.button5 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button5:setParent(obj.flowLayout7);
+    obj.button5:setText("Furtividade");
+    obj.button5:setWidth(130);
+    obj.button5:setName("button5");
+
+    obj.button6 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button6:setParent(obj.flowLayout7);
+    obj.button6:setText("Prestidigitação");
+    obj.button6:setWidth(130);
+    obj.button6:setName("button6");
 
     obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink9:setParent(obj.fraLayAtributos);
@@ -1103,18 +1161,18 @@ local function constructNew_frmDnD5()
     obj.label21:setName("label21");
     obj.label21:setFontColor("white");
 
-    obj.flowLayout6 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout6:setParent(obj.flowPart12);
-    obj.flowLayout6:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout6:setAutoHeight(true);
-    obj.flowLayout6:setLineSpacing(0);
-    obj.flowLayout6:setHorzAlign("leading");
-    obj.flowLayout6:setName("flowLayout6");
-    obj.flowLayout6:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout6:setVertAlign("leading");
+    obj.flowLayout8 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout8:setParent(obj.flowPart12);
+    obj.flowLayout8:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout8:setAutoHeight(true);
+    obj.flowLayout8:setLineSpacing(0);
+    obj.flowLayout8:setHorzAlign("leading");
+    obj.flowLayout8:setName("flowLayout8");
+    obj.flowLayout8:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout8:setVertAlign("leading");
 
     obj.flowPart13 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart13:setParent(obj.flowLayout6);
+    obj.flowPart13:setParent(obj.flowLayout8);
     obj.flowPart13:setMinWidth(206);
     obj.flowPart13:setMaxWidth(250);
     obj.flowPart13:setHeight(17);
@@ -1170,9 +1228,26 @@ local function constructNew_frmDnD5()
     obj.label23:setFontColor("white");
 
     obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink10:setParent(obj.flowLayout6);
+    obj.dataLink10:setParent(obj.flowLayout8);
     obj.dataLink10:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'resistencias.constituicao'});
     obj.dataLink10:setName("dataLink10");
+
+    obj.flowLayout9 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout9:setParent(obj.fraLayAtributos);
+    obj.flowLayout9:setLeft(20);
+    obj.flowLayout9:setTop(20);
+    obj.flowLayout9:setWidth(250);
+    obj.flowLayout9:setAutoHeight(true);
+    obj.flowLayout9:setOrientation("horizontal");
+    obj.flowLayout9:setName("flowLayout9");
+    obj.flowLayout9:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout9:setVertAlign("leading");
+
+    obj.button7 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button7:setParent(obj.flowLayout9);
+    obj.button7:setText("Teste de Resistência");
+    obj.button7:setWidth(130);
+    obj.button7:setName("button7");
 
     obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink11:setParent(obj.fraLayAtributos);
@@ -1234,18 +1309,18 @@ local function constructNew_frmDnD5()
     obj.label25:setName("label25");
     obj.label25:setFontColor("white");
 
-    obj.flowLayout7 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout7:setParent(obj.flowPart14);
-    obj.flowLayout7:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout7:setAutoHeight(true);
-    obj.flowLayout7:setLineSpacing(0);
-    obj.flowLayout7:setHorzAlign("leading");
-    obj.flowLayout7:setName("flowLayout7");
-    obj.flowLayout7:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout7:setVertAlign("leading");
+    obj.flowLayout10 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout10:setParent(obj.flowPart14);
+    obj.flowLayout10:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout10:setAutoHeight(true);
+    obj.flowLayout10:setLineSpacing(0);
+    obj.flowLayout10:setHorzAlign("leading");
+    obj.flowLayout10:setName("flowLayout10");
+    obj.flowLayout10:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout10:setVertAlign("leading");
 
     obj.flowPart15 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart15:setParent(obj.flowLayout7);
+    obj.flowPart15:setParent(obj.flowLayout10);
     obj.flowPart15:setMinWidth(206);
     obj.flowPart15:setMaxWidth(250);
     obj.flowPart15:setHeight(17);
@@ -1301,12 +1376,12 @@ local function constructNew_frmDnD5()
     obj.label27:setFontColor("white");
 
     obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink12:setParent(obj.flowLayout7);
+    obj.dataLink12:setParent(obj.flowLayout10);
     obj.dataLink12:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'resistencias.inteligencia'});
     obj.dataLink12:setName("dataLink12");
 
     obj.flowPart16 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart16:setParent(obj.flowLayout7);
+    obj.flowPart16:setParent(obj.flowLayout10);
     obj.flowPart16:setMinWidth(206);
     obj.flowPart16:setMaxWidth(250);
     obj.flowPart16:setHeight(17);
@@ -1362,12 +1437,12 @@ local function constructNew_frmDnD5()
     obj.label29:setFontColor("white");
 
     obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink13:setParent(obj.flowLayout7);
+    obj.dataLink13:setParent(obj.flowLayout10);
     obj.dataLink13:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.arcanismo'});
     obj.dataLink13:setName("dataLink13");
 
     obj.flowPart17 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart17:setParent(obj.flowLayout7);
+    obj.flowPart17:setParent(obj.flowLayout10);
     obj.flowPart17:setMinWidth(206);
     obj.flowPart17:setMaxWidth(250);
     obj.flowPart17:setHeight(17);
@@ -1423,12 +1498,12 @@ local function constructNew_frmDnD5()
     obj.label31:setFontColor("white");
 
     obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink14:setParent(obj.flowLayout7);
+    obj.dataLink14:setParent(obj.flowLayout10);
     obj.dataLink14:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.historia'});
     obj.dataLink14:setName("dataLink14");
 
     obj.flowPart18 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart18:setParent(obj.flowLayout7);
+    obj.flowPart18:setParent(obj.flowLayout10);
     obj.flowPart18:setMinWidth(206);
     obj.flowPart18:setMaxWidth(250);
     obj.flowPart18:setHeight(17);
@@ -1484,12 +1559,12 @@ local function constructNew_frmDnD5()
     obj.label33:setFontColor("white");
 
     obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink15:setParent(obj.flowLayout7);
+    obj.dataLink15:setParent(obj.flowLayout10);
     obj.dataLink15:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.investigacao'});
     obj.dataLink15:setName("dataLink15");
 
     obj.flowPart19 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart19:setParent(obj.flowLayout7);
+    obj.flowPart19:setParent(obj.flowLayout10);
     obj.flowPart19:setMinWidth(206);
     obj.flowPart19:setMaxWidth(250);
     obj.flowPart19:setHeight(17);
@@ -1545,12 +1620,12 @@ local function constructNew_frmDnD5()
     obj.label35:setFontColor("white");
 
     obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink16:setParent(obj.flowLayout7);
+    obj.dataLink16:setParent(obj.flowLayout10);
     obj.dataLink16:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.natureza'});
     obj.dataLink16:setName("dataLink16");
 
     obj.flowPart20 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart20:setParent(obj.flowLayout7);
+    obj.flowPart20:setParent(obj.flowLayout10);
     obj.flowPart20:setMinWidth(206);
     obj.flowPart20:setMaxWidth(250);
     obj.flowPart20:setHeight(17);
@@ -1606,9 +1681,56 @@ local function constructNew_frmDnD5()
     obj.label37:setFontColor("white");
 
     obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink17:setParent(obj.flowLayout7);
+    obj.dataLink17:setParent(obj.flowLayout10);
     obj.dataLink17:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.religiao'});
     obj.dataLink17:setName("dataLink17");
+
+    obj.flowLayout11 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout11:setParent(obj.fraLayAtributos);
+    obj.flowLayout11:setLeft(20);
+    obj.flowLayout11:setTop(20);
+    obj.flowLayout11:setWidth(250);
+    obj.flowLayout11:setAutoHeight(true);
+    obj.flowLayout11:setOrientation("horizontal");
+    obj.flowLayout11:setName("flowLayout11");
+    obj.flowLayout11:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout11:setVertAlign("leading");
+
+    obj.button8 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button8:setParent(obj.flowLayout11);
+    obj.button8:setText("Teste de Resistência");
+    obj.button8:setWidth(130);
+    obj.button8:setName("button8");
+
+    obj.button9 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button9:setParent(obj.flowLayout11);
+    obj.button9:setText("Arcanismo");
+    obj.button9:setWidth(130);
+    obj.button9:setName("button9");
+
+    obj.button10 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button10:setParent(obj.flowLayout11);
+    obj.button10:setText("História");
+    obj.button10:setWidth(130);
+    obj.button10:setName("button10");
+
+    obj.button11 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button11:setParent(obj.flowLayout11);
+    obj.button11:setText("Investigação");
+    obj.button11:setWidth(130);
+    obj.button11:setName("button11");
+
+    obj.button12 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button12:setParent(obj.flowLayout11);
+    obj.button12:setText("Natureza");
+    obj.button12:setWidth(130);
+    obj.button12:setName("button12");
+
+    obj.button13 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button13:setParent(obj.flowLayout11);
+    obj.button13:setText("Religião");
+    obj.button13:setWidth(130);
+    obj.button13:setName("button13");
 
     obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink18:setParent(obj.fraLayAtributos);
@@ -1670,18 +1792,18 @@ local function constructNew_frmDnD5()
     obj.label39:setName("label39");
     obj.label39:setFontColor("white");
 
-    obj.flowLayout8 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout8:setParent(obj.flowPart21);
-    obj.flowLayout8:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout8:setAutoHeight(true);
-    obj.flowLayout8:setLineSpacing(0);
-    obj.flowLayout8:setHorzAlign("leading");
-    obj.flowLayout8:setName("flowLayout8");
-    obj.flowLayout8:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout8:setVertAlign("leading");
+    obj.flowLayout12 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout12:setParent(obj.flowPart21);
+    obj.flowLayout12:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout12:setAutoHeight(true);
+    obj.flowLayout12:setLineSpacing(0);
+    obj.flowLayout12:setHorzAlign("leading");
+    obj.flowLayout12:setName("flowLayout12");
+    obj.flowLayout12:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout12:setVertAlign("leading");
 
     obj.flowPart22 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart22:setParent(obj.flowLayout8);
+    obj.flowPart22:setParent(obj.flowLayout12);
     obj.flowPart22:setMinWidth(206);
     obj.flowPart22:setMaxWidth(250);
     obj.flowPart22:setHeight(17);
@@ -1737,12 +1859,12 @@ local function constructNew_frmDnD5()
     obj.label41:setFontColor("white");
 
     obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink19:setParent(obj.flowLayout8);
+    obj.dataLink19:setParent(obj.flowLayout12);
     obj.dataLink19:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'resistencias.sabedoria'});
     obj.dataLink19:setName("dataLink19");
 
     obj.flowPart23 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart23:setParent(obj.flowLayout8);
+    obj.flowPart23:setParent(obj.flowLayout12);
     obj.flowPart23:setMinWidth(206);
     obj.flowPart23:setMaxWidth(250);
     obj.flowPart23:setHeight(17);
@@ -1798,12 +1920,12 @@ local function constructNew_frmDnD5()
     obj.label43:setFontColor("white");
 
     obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink20:setParent(obj.flowLayout8);
+    obj.dataLink20:setParent(obj.flowLayout12);
     obj.dataLink20:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.adestrarAnimais'});
     obj.dataLink20:setName("dataLink20");
 
     obj.flowPart24 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart24:setParent(obj.flowLayout8);
+    obj.flowPart24:setParent(obj.flowLayout12);
     obj.flowPart24:setMinWidth(206);
     obj.flowPart24:setMaxWidth(250);
     obj.flowPart24:setHeight(17);
@@ -1859,12 +1981,12 @@ local function constructNew_frmDnD5()
     obj.label45:setFontColor("white");
 
     obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink21:setParent(obj.flowLayout8);
+    obj.dataLink21:setParent(obj.flowLayout12);
     obj.dataLink21:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.intuicao'});
     obj.dataLink21:setName("dataLink21");
 
     obj.flowPart25 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart25:setParent(obj.flowLayout8);
+    obj.flowPart25:setParent(obj.flowLayout12);
     obj.flowPart25:setMinWidth(206);
     obj.flowPart25:setMaxWidth(250);
     obj.flowPart25:setHeight(17);
@@ -1920,12 +2042,12 @@ local function constructNew_frmDnD5()
     obj.label47:setFontColor("white");
 
     obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink22:setParent(obj.flowLayout8);
+    obj.dataLink22:setParent(obj.flowLayout12);
     obj.dataLink22:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.medicina'});
     obj.dataLink22:setName("dataLink22");
 
     obj.flowPart26 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart26:setParent(obj.flowLayout8);
+    obj.flowPart26:setParent(obj.flowLayout12);
     obj.flowPart26:setMinWidth(206);
     obj.flowPart26:setMaxWidth(250);
     obj.flowPart26:setHeight(17);
@@ -1981,12 +2103,12 @@ local function constructNew_frmDnD5()
     obj.label49:setFontColor("white");
 
     obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink23:setParent(obj.flowLayout8);
+    obj.dataLink23:setParent(obj.flowLayout12);
     obj.dataLink23:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.percepcao'});
     obj.dataLink23:setName("dataLink23");
 
     obj.flowPart27 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart27:setParent(obj.flowLayout8);
+    obj.flowPart27:setParent(obj.flowLayout12);
     obj.flowPart27:setMinWidth(206);
     obj.flowPart27:setMaxWidth(250);
     obj.flowPart27:setHeight(17);
@@ -2042,9 +2164,56 @@ local function constructNew_frmDnD5()
     obj.label51:setFontColor("white");
 
     obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink24:setParent(obj.flowLayout8);
+    obj.dataLink24:setParent(obj.flowLayout12);
     obj.dataLink24:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.sobrevivencia'});
     obj.dataLink24:setName("dataLink24");
+
+    obj.flowLayout13 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout13:setParent(obj.fraLayAtributos);
+    obj.flowLayout13:setLeft(20);
+    obj.flowLayout13:setTop(20);
+    obj.flowLayout13:setWidth(250);
+    obj.flowLayout13:setAutoHeight(true);
+    obj.flowLayout13:setOrientation("horizontal");
+    obj.flowLayout13:setName("flowLayout13");
+    obj.flowLayout13:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout13:setVertAlign("leading");
+
+    obj.button14 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button14:setParent(obj.flowLayout13);
+    obj.button14:setText("Teste de Resistência");
+    obj.button14:setWidth(130);
+    obj.button14:setName("button14");
+
+    obj.button15 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button15:setParent(obj.flowLayout13);
+    obj.button15:setText("Adestrar Animais");
+    obj.button15:setWidth(130);
+    obj.button15:setName("button15");
+
+    obj.button16 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button16:setParent(obj.flowLayout13);
+    obj.button16:setText("Intuição");
+    obj.button16:setWidth(130);
+    obj.button16:setName("button16");
+
+    obj.button17 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button17:setParent(obj.flowLayout13);
+    obj.button17:setText("Medicina");
+    obj.button17:setWidth(130);
+    obj.button17:setName("button17");
+
+    obj.button18 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button18:setParent(obj.flowLayout13);
+    obj.button18:setText("Percepção");
+    obj.button18:setWidth(130);
+    obj.button18:setName("button18");
+
+    obj.button19 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button19:setParent(obj.flowLayout13);
+    obj.button19:setText("Sobrevivência");
+    obj.button19:setWidth(130);
+    obj.button19:setName("button19");
 
     obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink25:setParent(obj.fraLayAtributos);
@@ -2106,18 +2275,18 @@ local function constructNew_frmDnD5()
     obj.label53:setName("label53");
     obj.label53:setFontColor("white");
 
-    obj.flowLayout9 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout9:setParent(obj.flowPart28);
-    obj.flowLayout9:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout9:setAutoHeight(true);
-    obj.flowLayout9:setLineSpacing(0);
-    obj.flowLayout9:setHorzAlign("leading");
-    obj.flowLayout9:setName("flowLayout9");
-    obj.flowLayout9:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout9:setVertAlign("leading");
+    obj.flowLayout14 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout14:setParent(obj.flowPart28);
+    obj.flowLayout14:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout14:setAutoHeight(true);
+    obj.flowLayout14:setLineSpacing(0);
+    obj.flowLayout14:setHorzAlign("leading");
+    obj.flowLayout14:setName("flowLayout14");
+    obj.flowLayout14:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout14:setVertAlign("leading");
 
     obj.flowPart29 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart29:setParent(obj.flowLayout9);
+    obj.flowPart29:setParent(obj.flowLayout14);
     obj.flowPart29:setMinWidth(206);
     obj.flowPart29:setMaxWidth(250);
     obj.flowPart29:setHeight(17);
@@ -2173,12 +2342,12 @@ local function constructNew_frmDnD5()
     obj.label55:setFontColor("white");
 
     obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink26:setParent(obj.flowLayout9);
+    obj.dataLink26:setParent(obj.flowLayout14);
     obj.dataLink26:setFields({'atributos.modcarisma', 'bonusProficiencia', 'resistencias.carisma'});
     obj.dataLink26:setName("dataLink26");
 
     obj.flowPart30 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart30:setParent(obj.flowLayout9);
+    obj.flowPart30:setParent(obj.flowLayout14);
     obj.flowPart30:setMinWidth(206);
     obj.flowPart30:setMaxWidth(250);
     obj.flowPart30:setHeight(17);
@@ -2234,12 +2403,12 @@ local function constructNew_frmDnD5()
     obj.label57:setFontColor("white");
 
     obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink27:setParent(obj.flowLayout9);
+    obj.dataLink27:setParent(obj.flowLayout14);
     obj.dataLink27:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.atuacao'});
     obj.dataLink27:setName("dataLink27");
 
     obj.flowPart31 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart31:setParent(obj.flowLayout9);
+    obj.flowPart31:setParent(obj.flowLayout14);
     obj.flowPart31:setMinWidth(206);
     obj.flowPart31:setMaxWidth(250);
     obj.flowPart31:setHeight(17);
@@ -2295,12 +2464,12 @@ local function constructNew_frmDnD5()
     obj.label59:setFontColor("white");
 
     obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink28:setParent(obj.flowLayout9);
+    obj.dataLink28:setParent(obj.flowLayout14);
     obj.dataLink28:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.enganacao'});
     obj.dataLink28:setName("dataLink28");
 
     obj.flowPart32 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart32:setParent(obj.flowLayout9);
+    obj.flowPart32:setParent(obj.flowLayout14);
     obj.flowPart32:setMinWidth(206);
     obj.flowPart32:setMaxWidth(250);
     obj.flowPart32:setHeight(17);
@@ -2356,12 +2525,12 @@ local function constructNew_frmDnD5()
     obj.label61:setFontColor("white");
 
     obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink29:setParent(obj.flowLayout9);
+    obj.dataLink29:setParent(obj.flowLayout14);
     obj.dataLink29:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.intimidacao'});
     obj.dataLink29:setName("dataLink29");
 
     obj.flowPart33 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart33:setParent(obj.flowLayout9);
+    obj.flowPart33:setParent(obj.flowLayout14);
     obj.flowPart33:setMinWidth(206);
     obj.flowPart33:setMaxWidth(250);
     obj.flowPart33:setHeight(17);
@@ -2417,36 +2586,77 @@ local function constructNew_frmDnD5()
     obj.label63:setFontColor("white");
 
     obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink30:setParent(obj.flowLayout9);
+    obj.dataLink30:setParent(obj.flowLayout14);
     obj.dataLink30:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.persuasao'});
     obj.dataLink30:setName("dataLink30");
 
-    obj.flowLayout10 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout10:setParent(obj.flowLayout3);
-    obj.flowLayout10:setAutoHeight(true);
-    obj.flowLayout10:setHorzAlign("center");
-    obj.flowLayout10:setVertAlign("leading");
-    obj.flowLayout10:setMaxControlsPerLine(1);
-    obj.flowLayout10:setName("flowLayout10");
-    obj.flowLayout10:setStepSizes({310, 360});
-    obj.flowLayout10:setMinScaledWidth(300);
-    obj.flowLayout10:setMaxScaledWidth(340);
-    obj.flowLayout10:setAvoidScale(true);
-    obj.flowLayout10:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout15 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout15:setParent(obj.fraLayAtributos);
+    obj.flowLayout15:setLeft(20);
+    obj.flowLayout15:setTop(20);
+    obj.flowLayout15:setWidth(250);
+    obj.flowLayout15:setAutoHeight(true);
+    obj.flowLayout15:setOrientation("horizontal");
+    obj.flowLayout15:setName("flowLayout15");
+    obj.flowLayout15:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout15:setVertAlign("leading");
 
-    obj.flowLayout11 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout11:setParent(obj.flowLayout10);
-    obj.flowLayout11:setMinWidth(235);
-    obj.flowLayout11:setMaxWidth(475);
-    obj.flowLayout11:setAutoHeight(true);
-    obj.flowLayout11:setAvoidScale(false);
-    obj.flowLayout11:setVertAlign("center");
-    obj.flowLayout11:setHorzAlign("justify");
-    obj.flowLayout11:setName("flowLayout11");
-    obj.flowLayout11:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.button20 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button20:setParent(obj.flowLayout15);
+    obj.button20:setText("Teste de Resistência");
+    obj.button20:setWidth(130);
+    obj.button20:setName("button20");
+
+    obj.button21 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button21:setParent(obj.flowLayout15);
+    obj.button21:setText("Atuação");
+    obj.button21:setWidth(130);
+    obj.button21:setName("button21");
+
+    obj.button22 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button22:setParent(obj.flowLayout15);
+    obj.button22:setText("Enganação");
+    obj.button22:setWidth(130);
+    obj.button22:setName("button22");
+
+    obj.button23 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button23:setParent(obj.flowLayout15);
+    obj.button23:setText("Intimidação");
+    obj.button23:setWidth(130);
+    obj.button23:setName("button23");
+
+    obj.button24 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button24:setParent(obj.flowLayout15);
+    obj.button24:setText("Persuasão");
+    obj.button24:setWidth(130);
+    obj.button24:setName("button24");
+
+    obj.flowLayout16 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout16:setParent(obj.flowLayout3);
+    obj.flowLayout16:setAutoHeight(true);
+    obj.flowLayout16:setHorzAlign("center");
+    obj.flowLayout16:setVertAlign("leading");
+    obj.flowLayout16:setMaxControlsPerLine(1);
+    obj.flowLayout16:setName("flowLayout16");
+    obj.flowLayout16:setStepSizes({310, 360});
+    obj.flowLayout16:setMinScaledWidth(300);
+    obj.flowLayout16:setMaxScaledWidth(340);
+    obj.flowLayout16:setAvoidScale(true);
+    obj.flowLayout16:setMargins({left=1, right=1, top=2, bottom=2});
+
+    obj.flowLayout17 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout17:setParent(obj.flowLayout16);
+    obj.flowLayout17:setMinWidth(235);
+    obj.flowLayout17:setMaxWidth(475);
+    obj.flowLayout17:setAutoHeight(true);
+    obj.flowLayout17:setAvoidScale(false);
+    obj.flowLayout17:setVertAlign("center");
+    obj.flowLayout17:setHorzAlign("justify");
+    obj.flowLayout17:setName("flowLayout17");
+    obj.flowLayout17:setMargins({left=1, right=1, top=2, bottom=2});
 
     obj.flowPart34 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart34:setParent(obj.flowLayout11);
+    obj.flowPart34:setParent(obj.flowLayout17);
     obj.flowPart34:setStepSizes({105});
     obj.flowPart34:setMinScaledWidth(75);
     obj.flowPart34:setHeight(120);
@@ -2479,7 +2689,7 @@ local function constructNew_frmDnD5()
     obj.edit10:setFontColor("white");
 
     obj.flowPart35 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart35:setParent(obj.flowLayout11);
+    obj.flowPart35:setParent(obj.flowLayout17);
     obj.flowPart35:setStepSizes({105});
     obj.flowPart35:setMinScaledWidth(75);
     obj.flowPart35:setHeight(120);
@@ -2512,7 +2722,7 @@ local function constructNew_frmDnD5()
     obj.edit11:setFontColor("white");
 
     obj.flowPart36 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart36:setParent(obj.flowLayout11);
+    obj.flowPart36:setParent(obj.flowLayout17);
     obj.flowPart36:setStepSizes({105});
     obj.flowPart36:setMinScaledWidth(75);
     obj.flowPart36:setHeight(120);
@@ -2545,7 +2755,7 @@ local function constructNew_frmDnD5()
     obj.edit12:setFontColor("white");
 
     obj.flowPart37 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart37:setParent(obj.flowLayout10);
+    obj.flowPart37:setParent(obj.flowLayout16);
     obj.flowPart37:setMinWidth(235);
     obj.flowPart37:setMaxWidth(475);
     obj.flowPart37:setMinScaledWidth(200);
@@ -2660,19 +2870,19 @@ local function constructNew_frmDnD5()
     obj.label69:setName("label69");
     obj.label69:setFontColor("white");
 
-    obj.flowLayout12 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout12:setParent(obj.flowLayout10);
-    obj.flowLayout12:setAutoHeight(true);
-    obj.flowLayout12:setMinWidth(235);
-    obj.flowLayout12:setMaxWidth(475);
-    obj.flowLayout12:setMinScaledWidth(235);
-    obj.flowLayout12:setHorzAlign("justify");
-    obj.flowLayout12:setName("flowLayout12");
-    obj.flowLayout12:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout12:setVertAlign("leading");
+    obj.flowLayout18 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout18:setParent(obj.flowLayout16);
+    obj.flowLayout18:setAutoHeight(true);
+    obj.flowLayout18:setMinWidth(235);
+    obj.flowLayout18:setMaxWidth(475);
+    obj.flowLayout18:setMinScaledWidth(235);
+    obj.flowLayout18:setHorzAlign("justify");
+    obj.flowLayout18:setName("flowLayout18");
+    obj.flowLayout18:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout18:setVertAlign("leading");
 
     obj.flowPart38 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart38:setParent(obj.flowLayout12);
+    obj.flowPart38:setParent(obj.flowLayout18);
     obj.flowPart38:setFrameStyle("frames/panel4transp/frame.xml");
     obj.flowPart38:setStepSizes({130, 150, 160});
     obj.flowPart38:setHeight(100);
@@ -2745,7 +2955,7 @@ local function constructNew_frmDnD5()
     obj.label71:setFontColor("white");
 
     obj.flowPart39 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart39:setParent(obj.flowLayout12);
+    obj.flowPart39:setParent(obj.flowLayout18);
     obj.flowPart39:setFrameStyle("frames/panel4transp/frame.xml");
     obj.flowPart39:setStepSizes({170, 170});
     obj.flowPart39:setHeight(100);
@@ -2906,18 +3116,18 @@ local function constructNew_frmDnD5()
     obj.fraCaracteristicasLayout:setMinScaledWidth(300);
     obj.fraCaracteristicasLayout:setVertAlign("leading");
 
-    obj.flowLayout13 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout13:setParent(obj.fraCaracteristicasLayout);
-    obj.flowLayout13:setAutoHeight(true);
-    obj.flowLayout13:setMinScaledWidth(290);
-    obj.flowLayout13:setHorzAlign("center");
-    obj.flowLayout13:setName("flowLayout13");
-    obj.flowLayout13:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
-    obj.flowLayout13:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout13:setVertAlign("leading");
+    obj.flowLayout19 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout19:setParent(obj.fraCaracteristicasLayout);
+    obj.flowLayout19:setAutoHeight(true);
+    obj.flowLayout19:setMinScaledWidth(290);
+    obj.flowLayout19:setHorzAlign("center");
+    obj.flowLayout19:setName("flowLayout19");
+    obj.flowLayout19:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
+    obj.flowLayout19:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout19:setVertAlign("leading");
 
     obj.flowPart40 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart40:setParent(obj.flowLayout13);
+    obj.flowPart40:setParent(obj.flowLayout19);
     obj.flowPart40:setMinWidth(320);
     obj.flowPart40:setMaxWidth(1600);
     obj.flowPart40:setFrameStyle("frames/banner/heroGroup.xml");
@@ -2955,7 +3165,7 @@ local function constructNew_frmDnD5()
     obj.label75:setFontColor("#D0D0D0");
 
     obj.fraUpperGridCaracteristicas = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraUpperGridCaracteristicas:setParent(obj.flowLayout13);
+    obj.fraUpperGridCaracteristicas:setParent(obj.flowLayout19);
     obj.fraUpperGridCaracteristicas:setMinWidth(320);
     obj.fraUpperGridCaracteristicas:setMaxWidth(1600);
     obj.fraUpperGridCaracteristicas:setName("fraUpperGridCaracteristicas");
@@ -3242,32 +3452,32 @@ local function constructNew_frmDnD5()
     obj.flowLineBreak3:setParent(obj.fraCaracteristicasLayout);
     obj.flowLineBreak3:setName("flowLineBreak3");
 
-    obj.flowLayout14 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout14:setParent(obj.fraCaracteristicasLayout);
-    obj.flowLayout14:setAutoHeight(true);
-    obj.flowLayout14:setMinScaledWidth(290);
-    obj.flowLayout14:setHorzAlign("center");
-    obj.flowLayout14:setLineSpacing(10);
-    obj.flowLayout14:setName("flowLayout14");
-    obj.flowLayout14:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
-    obj.flowLayout14:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout14:setVertAlign("leading");
+    obj.flowLayout20 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout20:setParent(obj.fraCaracteristicasLayout);
+    obj.flowLayout20:setAutoHeight(true);
+    obj.flowLayout20:setMinScaledWidth(290);
+    obj.flowLayout20:setHorzAlign("center");
+    obj.flowLayout20:setLineSpacing(10);
+    obj.flowLayout20:setName("flowLayout20");
+    obj.flowLayout20:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
+    obj.flowLayout20:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout20:setVertAlign("leading");
 
-    obj.flowLayout15 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout15:setParent(obj.flowLayout14);
-    obj.flowLayout15:setMaxControlsPerLine(1);
-    obj.flowLayout15:setAutoHeight(true);
-    obj.flowLayout15:setLineSpacing(10);
-    obj.flowLayout15:setMargins({left = 4, right = 4});
-    obj.flowLayout15:setName("flowLayout15");
-    obj.flowLayout15:setStepSizes({});
-    obj.flowLayout15:setMinWidth(300);
-    obj.flowLayout15:setMaxWidth(1600);
-    obj.flowLayout15:setMinScaledWidth(300);
-    obj.flowLayout15:setVertAlign("leading");
+    obj.flowLayout21 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout21:setParent(obj.flowLayout20);
+    obj.flowLayout21:setMaxControlsPerLine(1);
+    obj.flowLayout21:setAutoHeight(true);
+    obj.flowLayout21:setLineSpacing(10);
+    obj.flowLayout21:setMargins({left = 4, right = 4});
+    obj.flowLayout21:setName("flowLayout21");
+    obj.flowLayout21:setStepSizes({});
+    obj.flowLayout21:setMinWidth(300);
+    obj.flowLayout21:setMaxWidth(1600);
+    obj.flowLayout21:setMinScaledWidth(300);
+    obj.flowLayout21:setVertAlign("leading");
 
     obj.flowPart41 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart41:setParent(obj.flowLayout15);
+    obj.flowPart41:setParent(obj.flowLayout21);
     obj.flowPart41:setHeight(390);
     obj.flowPart41:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart41:setMargins({left = 0, right = 4});
@@ -3301,7 +3511,7 @@ local function constructNew_frmDnD5()
     obj.label76:setFontColor("white");
 
     obj.flowPart42 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart42:setParent(obj.flowLayout15);
+    obj.flowPart42:setParent(obj.flowLayout21);
     obj.flowPart42:setHeight(115);
     obj.flowPart42:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart42:setMargins({left = 4, right = 0});
@@ -3333,21 +3543,21 @@ local function constructNew_frmDnD5()
     obj.label77:setName("label77");
     obj.label77:setFontColor("white");
 
-    obj.flowLayout16 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout16:setParent(obj.flowLayout14);
-    obj.flowLayout16:setMaxControlsPerLine(1);
-    obj.flowLayout16:setAutoHeight(true);
-    obj.flowLayout16:setLineSpacing(10);
-    obj.flowLayout16:setMargins({left=4, right=4});
-    obj.flowLayout16:setName("flowLayout16");
-    obj.flowLayout16:setStepSizes({});
-    obj.flowLayout16:setMinWidth(300);
-    obj.flowLayout16:setMaxWidth(1600);
-    obj.flowLayout16:setMinScaledWidth(300);
-    obj.flowLayout16:setVertAlign("leading");
+    obj.flowLayout22 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout22:setParent(obj.flowLayout20);
+    obj.flowLayout22:setMaxControlsPerLine(1);
+    obj.flowLayout22:setAutoHeight(true);
+    obj.flowLayout22:setLineSpacing(10);
+    obj.flowLayout22:setMargins({left=4, right=4});
+    obj.flowLayout22:setName("flowLayout22");
+    obj.flowLayout22:setStepSizes({});
+    obj.flowLayout22:setMinWidth(300);
+    obj.flowLayout22:setMaxWidth(1600);
+    obj.flowLayout22:setMinScaledWidth(300);
+    obj.flowLayout22:setVertAlign("leading");
 
     obj.flowPart43 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart43:setParent(obj.flowLayout16);
+    obj.flowPart43:setParent(obj.flowLayout22);
     obj.flowPart43:setHeight(140);
     obj.flowPart43:setFrameStyle("frames/panel5/topPanel.xml");
     obj.flowPart43:setMargins({left = 4, right = 4});
@@ -3380,7 +3590,7 @@ local function constructNew_frmDnD5()
     obj.label78:setFontColor("white");
 
     obj.flowPart44 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart44:setParent(obj.flowLayout16);
+    obj.flowPart44:setParent(obj.flowLayout22);
     obj.flowPart44:setHeight(115);
     obj.flowPart44:setFrameStyle("frames/panel5/centerPanel.xml");
     obj.flowPart44:setMargins({left = 4, right = 4});
@@ -3413,7 +3623,7 @@ local function constructNew_frmDnD5()
     obj.label79:setFontColor("white");
 
     obj.flowPart45 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart45:setParent(obj.flowLayout16);
+    obj.flowPart45:setParent(obj.flowLayout22);
     obj.flowPart45:setHeight(115);
     obj.flowPart45:setFrameStyle("frames/panel5/centerPanel.xml");
     obj.flowPart45:setMargins({left = 4, right = 4});
@@ -3446,7 +3656,7 @@ local function constructNew_frmDnD5()
     obj.label80:setFontColor("white");
 
     obj.flowPart46 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart46:setParent(obj.flowLayout16);
+    obj.flowPart46:setParent(obj.flowLayout22);
     obj.flowPart46:setHeight(115);
     obj.flowPart46:setFrameStyle("frames/panel5/bottomPanel.xml");
     obj.flowPart46:setMargins({left = 4, right = 4});
@@ -3479,7 +3689,7 @@ local function constructNew_frmDnD5()
     obj.label81:setFontColor("white");
 
     obj.flowPart47 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart47:setParent(obj.flowLayout14);
+    obj.flowPart47:setParent(obj.flowLayout20);
     obj.flowPart47:setHeight(515);
     obj.flowPart47:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart47:setMargins({left = 4, right = 4});
@@ -3515,19 +3725,19 @@ local function constructNew_frmDnD5()
     obj.flowLineBreak4:setParent(obj.fraCaracteristicasLayout);
     obj.flowLineBreak4:setName("flowLineBreak4");
 
-    obj.flowLayout17 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout17:setParent(obj.fraCaracteristicasLayout);
-    obj.flowLayout17:setAutoHeight(true);
-    obj.flowLayout17:setMinScaledWidth(290);
-    obj.flowLayout17:setHorzAlign("center");
-    obj.flowLayout17:setLineSpacing(10);
-    obj.flowLayout17:setMargins({top=5});
-    obj.flowLayout17:setName("flowLayout17");
-    obj.flowLayout17:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
-    obj.flowLayout17:setVertAlign("leading");
+    obj.flowLayout23 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout23:setParent(obj.fraCaracteristicasLayout);
+    obj.flowLayout23:setAutoHeight(true);
+    obj.flowLayout23:setMinScaledWidth(290);
+    obj.flowLayout23:setHorzAlign("center");
+    obj.flowLayout23:setLineSpacing(10);
+    obj.flowLayout23:setMargins({top=5});
+    obj.flowLayout23:setName("flowLayout23");
+    obj.flowLayout23:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
+    obj.flowLayout23:setVertAlign("leading");
 
     obj.fraAliadosOrganizacoes = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraAliadosOrganizacoes:setParent(obj.flowLayout17);
+    obj.fraAliadosOrganizacoes:setParent(obj.flowLayout23);
     obj.fraAliadosOrganizacoes:setName("fraAliadosOrganizacoes");
     obj.fraAliadosOrganizacoes:setAutoHeight(true);
     obj.fraAliadosOrganizacoes:setFrameStyle("frames/panel5/frame.xml");
@@ -3635,7 +3845,7 @@ local function constructNew_frmDnD5()
     obj.label85:setFontColor("white");
 
     obj.flowPart49 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart49:setParent(obj.flowLayout17);
+    obj.flowPart49:setParent(obj.flowLayout23);
     obj.flowPart49:setHeight(515);
     obj.flowPart49:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart49:setMargins({left = 4, right = 4});
@@ -4042,18 +4252,18 @@ local function constructNew_frmDnD5()
     obj.edit25:setFontSize(15);
     obj.edit25:setFontColor("white");
 
-    obj.flowLayout18 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout18:setParent(obj.popMagia);
-    obj.flowLayout18:setAlign("top");
-    obj.flowLayout18:setAutoHeight(true);
-    obj.flowLayout18:setMaxControlsPerLine(2);
-    obj.flowLayout18:setMargins({bottom=4});
-    obj.flowLayout18:setHorzAlign("center");
-    obj.flowLayout18:setName("flowLayout18");
-    obj.flowLayout18:setVertAlign("leading");
+    obj.flowLayout24 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout24:setParent(obj.popMagia);
+    obj.flowLayout24:setAlign("top");
+    obj.flowLayout24:setAutoHeight(true);
+    obj.flowLayout24:setMaxControlsPerLine(2);
+    obj.flowLayout24:setMargins({bottom=4});
+    obj.flowLayout24:setHorzAlign("center");
+    obj.flowLayout24:setName("flowLayout24");
+    obj.flowLayout24:setVertAlign("leading");
 
     obj.flowPart51 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart51:setParent(obj.flowLayout18);
+    obj.flowPart51:setParent(obj.flowLayout24);
     obj.flowPart51:setMinWidth(30);
     obj.flowPart51:setMaxWidth(400);
     obj.flowPart51:setHeight(35);
@@ -4083,7 +4293,7 @@ local function constructNew_frmDnD5()
     obj.edit26:setFontColor("white");
 
     obj.flowPart52 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart52:setParent(obj.flowLayout18);
+    obj.flowPart52:setParent(obj.flowLayout24);
     obj.flowPart52:setMinWidth(30);
     obj.flowPart52:setMaxWidth(400);
     obj.flowPart52:setHeight(35);
@@ -4113,7 +4323,7 @@ local function constructNew_frmDnD5()
     obj.edit27:setFontColor("white");
 
     obj.flowPart53 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart53:setParent(obj.flowLayout18);
+    obj.flowPart53:setParent(obj.flowLayout24);
     obj.flowPart53:setMinWidth(30);
     obj.flowPart53:setMaxWidth(400);
     obj.flowPart53:setHeight(35);
@@ -4143,7 +4353,7 @@ local function constructNew_frmDnD5()
     obj.edit28:setFontColor("white");
 
     obj.flowPart54 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart54:setParent(obj.flowLayout18);
+    obj.flowPart54:setParent(obj.flowLayout24);
     obj.flowPart54:setMinWidth(30);
     obj.flowPart54:setMaxWidth(400);
     obj.flowPart54:setHeight(35);
@@ -4196,18 +4406,18 @@ local function constructNew_frmDnD5()
     obj.fraMagiasLayout:setMinScaledWidth(300);
     obj.fraMagiasLayout:setVertAlign("leading");
 
-    obj.flowLayout19 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout19:setParent(obj.fraMagiasLayout);
-    obj.flowLayout19:setAutoHeight(true);
-    obj.flowLayout19:setMinScaledWidth(290);
-    obj.flowLayout19:setHorzAlign("center");
-    obj.flowLayout19:setName("flowLayout19");
-    obj.flowLayout19:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
-    obj.flowLayout19:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout19:setVertAlign("leading");
+    obj.flowLayout25 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout25:setParent(obj.fraMagiasLayout);
+    obj.flowLayout25:setAutoHeight(true);
+    obj.flowLayout25:setMinScaledWidth(290);
+    obj.flowLayout25:setHorzAlign("center");
+    obj.flowLayout25:setName("flowLayout25");
+    obj.flowLayout25:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
+    obj.flowLayout25:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout25:setVertAlign("leading");
 
     obj.flowPart55 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart55:setParent(obj.flowLayout19);
+    obj.flowPart55:setParent(obj.flowLayout25);
     obj.flowPart55:setMinWidth(320);
     obj.flowPart55:setMaxWidth(1600);
     obj.flowPart55:setFrameStyle("frames/banner/magicGroup.xml");
@@ -4245,7 +4455,7 @@ local function constructNew_frmDnD5()
     obj.label97:setFontColor("#D0D0D0");
 
     obj.fraUpperGridMagias = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraUpperGridMagias:setParent(obj.flowLayout19);
+    obj.fraUpperGridMagias:setParent(obj.flowLayout25);
     obj.fraUpperGridMagias:setMinWidth(320);
     obj.fraUpperGridMagias:setMaxWidth(1600);
     obj.fraUpperGridMagias:setName("fraUpperGridMagias");
@@ -4485,33 +4695,33 @@ self.upperGridMagicEditBox1._RecalcSize();
     obj.flowLineBreak8:setParent(obj.fraMagiasLayout);
     obj.flowLineBreak8:setName("flowLineBreak8");
 
-    obj.flowLayout20 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout20:setParent(obj.fraMagiasLayout);
-    obj.flowLayout20:setAutoHeight(true);
-    obj.flowLayout20:setMaxColumns(3);
-    obj.flowLayout20:setHorzAlign("center");
-    obj.flowLayout20:setOrientation("vertical");
-    obj.flowLayout20:setName("flowLayout20");
-    obj.flowLayout20:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
-    obj.flowLayout20:setMinScaledWidth(300);
-    obj.flowLayout20:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout20:setVertAlign("leading");
+    obj.flowLayout26 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout26:setParent(obj.fraMagiasLayout);
+    obj.flowLayout26:setAutoHeight(true);
+    obj.flowLayout26:setMaxColumns(3);
+    obj.flowLayout26:setHorzAlign("center");
+    obj.flowLayout26:setOrientation("vertical");
+    obj.flowLayout26:setName("flowLayout26");
+    obj.flowLayout26:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
+    obj.flowLayout26:setMinScaledWidth(300);
+    obj.flowLayout26:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout26:setVertAlign("leading");
 
-    obj.flowLayout21 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout21:setParent(obj.flowLayout20);
-    obj.flowLayout21:setHeight(100);
-    obj.flowLayout21:setAvoidScale(true);
-    obj.flowLayout21:setMaxControlsPerLine(1);
-    obj.flowLayout21:setAutoHeight(true);
-    obj.flowLayout21:setName("flowLayout21");
-    obj.flowLayout21:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout21:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout21:setMinScaledWidth(300);
-    obj.flowLayout21:setMaxScaledWidth(600);
-    obj.flowLayout21:setVertAlign("leading");
+    obj.flowLayout27 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout27:setParent(obj.flowLayout26);
+    obj.flowLayout27:setHeight(100);
+    obj.flowLayout27:setAvoidScale(true);
+    obj.flowLayout27:setMaxControlsPerLine(1);
+    obj.flowLayout27:setAutoHeight(true);
+    obj.flowLayout27:setName("flowLayout27");
+    obj.flowLayout27:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout27:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout27:setMinScaledWidth(300);
+    obj.flowLayout27:setMaxScaledWidth(600);
+    obj.flowLayout27:setVertAlign("leading");
 
     obj.flowPart56 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart56:setParent(obj.flowLayout21);
+    obj.flowPart56:setParent(obj.flowLayout27);
     obj.flowPart56:setFrameStyle("frames/magicHeader/header0.xml");
     obj.flowPart56:setName("flowPart56");
     obj.flowPart56:setAvoidScale(true);
@@ -4543,7 +4753,7 @@ self.upperGridMagicEditBox1._RecalcSize();
     obj.label99:setFontColor("white");
 
     obj.flwMagicRecordList1 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList1:setParent(obj.flowLayout21);
+    obj.flwMagicRecordList1:setParent(obj.flowLayout27);
     obj.flwMagicRecordList1:setMinWidth(300);
     obj.flwMagicRecordList1:setMaxWidth(600);
     obj.flwMagicRecordList1:setMinScaledWidth(280);
@@ -4589,21 +4799,21 @@ self.upperGridMagicEditBox1._RecalcSize();
 self.flwMagicRecordList1._recalcHeight();
 
 
-    obj.flowLayout22 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout22:setParent(obj.flowLayout20);
-    obj.flowLayout22:setHeight(100);
-    obj.flowLayout22:setAvoidScale(true);
-    obj.flowLayout22:setMaxControlsPerLine(1);
-    obj.flowLayout22:setAutoHeight(true);
-    obj.flowLayout22:setName("flowLayout22");
-    obj.flowLayout22:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout22:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout22:setMinScaledWidth(300);
-    obj.flowLayout22:setMaxScaledWidth(600);
-    obj.flowLayout22:setVertAlign("leading");
+    obj.flowLayout28 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout28:setParent(obj.flowLayout26);
+    obj.flowLayout28:setHeight(100);
+    obj.flowLayout28:setAvoidScale(true);
+    obj.flowLayout28:setMaxControlsPerLine(1);
+    obj.flowLayout28:setAutoHeight(true);
+    obj.flowLayout28:setName("flowLayout28");
+    obj.flowLayout28:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout28:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout28:setMinScaledWidth(300);
+    obj.flowLayout28:setMaxScaledWidth(600);
+    obj.flowLayout28:setVertAlign("leading");
 
     obj.flowPart57 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart57:setParent(obj.flowLayout22);
+    obj.flowPart57:setParent(obj.flowLayout28);
     obj.flowPart57:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart57:setName("flowPart57");
     obj.flowPart57:setAvoidScale(true);
@@ -4647,7 +4857,7 @@ self.flwMagicRecordList1._recalcHeight();
     obj.edit32:setFontColor("white");
 
     obj.flwMagicRecordList2 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList2:setParent(obj.flowLayout22);
+    obj.flwMagicRecordList2:setParent(obj.flowLayout28);
     obj.flwMagicRecordList2:setMinWidth(300);
     obj.flwMagicRecordList2:setMaxWidth(600);
     obj.flwMagicRecordList2:setMinScaledWidth(280);
@@ -4693,21 +4903,21 @@ self.flwMagicRecordList1._recalcHeight();
 self.flwMagicRecordList2._recalcHeight();
 
 
-    obj.flowLayout23 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout23:setParent(obj.flowLayout20);
-    obj.flowLayout23:setHeight(100);
-    obj.flowLayout23:setAvoidScale(true);
-    obj.flowLayout23:setMaxControlsPerLine(1);
-    obj.flowLayout23:setAutoHeight(true);
-    obj.flowLayout23:setName("flowLayout23");
-    obj.flowLayout23:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout23:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout23:setMinScaledWidth(300);
-    obj.flowLayout23:setMaxScaledWidth(600);
-    obj.flowLayout23:setVertAlign("leading");
+    obj.flowLayout29 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout29:setParent(obj.flowLayout26);
+    obj.flowLayout29:setHeight(100);
+    obj.flowLayout29:setAvoidScale(true);
+    obj.flowLayout29:setMaxControlsPerLine(1);
+    obj.flowLayout29:setAutoHeight(true);
+    obj.flowLayout29:setName("flowLayout29");
+    obj.flowLayout29:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout29:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout29:setMinScaledWidth(300);
+    obj.flowLayout29:setMaxScaledWidth(600);
+    obj.flowLayout29:setVertAlign("leading");
 
     obj.flowPart58 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart58:setParent(obj.flowLayout23);
+    obj.flowPart58:setParent(obj.flowLayout29);
     obj.flowPart58:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart58:setName("flowPart58");
     obj.flowPart58:setAvoidScale(true);
@@ -4751,7 +4961,7 @@ self.flwMagicRecordList2._recalcHeight();
     obj.edit34:setFontColor("white");
 
     obj.flwMagicRecordList3 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList3:setParent(obj.flowLayout23);
+    obj.flwMagicRecordList3:setParent(obj.flowLayout29);
     obj.flwMagicRecordList3:setMinWidth(300);
     obj.flwMagicRecordList3:setMaxWidth(600);
     obj.flwMagicRecordList3:setMinScaledWidth(280);
@@ -4797,21 +5007,21 @@ self.flwMagicRecordList2._recalcHeight();
 self.flwMagicRecordList3._recalcHeight();
 
 
-    obj.flowLayout24 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout24:setParent(obj.flowLayout20);
-    obj.flowLayout24:setHeight(100);
-    obj.flowLayout24:setAvoidScale(true);
-    obj.flowLayout24:setMaxControlsPerLine(1);
-    obj.flowLayout24:setAutoHeight(true);
-    obj.flowLayout24:setName("flowLayout24");
-    obj.flowLayout24:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout24:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout24:setMinScaledWidth(300);
-    obj.flowLayout24:setMaxScaledWidth(600);
-    obj.flowLayout24:setVertAlign("leading");
+    obj.flowLayout30 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout30:setParent(obj.flowLayout26);
+    obj.flowLayout30:setHeight(100);
+    obj.flowLayout30:setAvoidScale(true);
+    obj.flowLayout30:setMaxControlsPerLine(1);
+    obj.flowLayout30:setAutoHeight(true);
+    obj.flowLayout30:setName("flowLayout30");
+    obj.flowLayout30:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout30:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout30:setMinScaledWidth(300);
+    obj.flowLayout30:setMaxScaledWidth(600);
+    obj.flowLayout30:setVertAlign("leading");
 
     obj.flowPart59 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart59:setParent(obj.flowLayout24);
+    obj.flowPart59:setParent(obj.flowLayout30);
     obj.flowPart59:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart59:setName("flowPart59");
     obj.flowPart59:setAvoidScale(true);
@@ -4855,7 +5065,7 @@ self.flwMagicRecordList3._recalcHeight();
     obj.edit36:setFontColor("white");
 
     obj.flwMagicRecordList4 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList4:setParent(obj.flowLayout24);
+    obj.flwMagicRecordList4:setParent(obj.flowLayout30);
     obj.flwMagicRecordList4:setMinWidth(300);
     obj.flwMagicRecordList4:setMaxWidth(600);
     obj.flwMagicRecordList4:setMinScaledWidth(280);
@@ -4901,21 +5111,21 @@ self.flwMagicRecordList3._recalcHeight();
 self.flwMagicRecordList4._recalcHeight();
 
 
-    obj.flowLayout25 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout25:setParent(obj.flowLayout20);
-    obj.flowLayout25:setHeight(100);
-    obj.flowLayout25:setAvoidScale(true);
-    obj.flowLayout25:setMaxControlsPerLine(1);
-    obj.flowLayout25:setAutoHeight(true);
-    obj.flowLayout25:setName("flowLayout25");
-    obj.flowLayout25:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout25:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout25:setMinScaledWidth(300);
-    obj.flowLayout25:setMaxScaledWidth(600);
-    obj.flowLayout25:setVertAlign("leading");
+    obj.flowLayout31 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout31:setParent(obj.flowLayout26);
+    obj.flowLayout31:setHeight(100);
+    obj.flowLayout31:setAvoidScale(true);
+    obj.flowLayout31:setMaxControlsPerLine(1);
+    obj.flowLayout31:setAutoHeight(true);
+    obj.flowLayout31:setName("flowLayout31");
+    obj.flowLayout31:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout31:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout31:setMinScaledWidth(300);
+    obj.flowLayout31:setMaxScaledWidth(600);
+    obj.flowLayout31:setVertAlign("leading");
 
     obj.flowPart60 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart60:setParent(obj.flowLayout25);
+    obj.flowPart60:setParent(obj.flowLayout31);
     obj.flowPart60:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart60:setName("flowPart60");
     obj.flowPart60:setAvoidScale(true);
@@ -4959,7 +5169,7 @@ self.flwMagicRecordList4._recalcHeight();
     obj.edit38:setFontColor("white");
 
     obj.flwMagicRecordList5 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList5:setParent(obj.flowLayout25);
+    obj.flwMagicRecordList5:setParent(obj.flowLayout31);
     obj.flwMagicRecordList5:setMinWidth(300);
     obj.flwMagicRecordList5:setMaxWidth(600);
     obj.flwMagicRecordList5:setMinScaledWidth(280);
@@ -5005,21 +5215,21 @@ self.flwMagicRecordList4._recalcHeight();
 self.flwMagicRecordList5._recalcHeight();
 
 
-    obj.flowLayout26 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout26:setParent(obj.flowLayout20);
-    obj.flowLayout26:setHeight(100);
-    obj.flowLayout26:setAvoidScale(true);
-    obj.flowLayout26:setMaxControlsPerLine(1);
-    obj.flowLayout26:setAutoHeight(true);
-    obj.flowLayout26:setName("flowLayout26");
-    obj.flowLayout26:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout26:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout26:setMinScaledWidth(300);
-    obj.flowLayout26:setMaxScaledWidth(600);
-    obj.flowLayout26:setVertAlign("leading");
+    obj.flowLayout32 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout32:setParent(obj.flowLayout26);
+    obj.flowLayout32:setHeight(100);
+    obj.flowLayout32:setAvoidScale(true);
+    obj.flowLayout32:setMaxControlsPerLine(1);
+    obj.flowLayout32:setAutoHeight(true);
+    obj.flowLayout32:setName("flowLayout32");
+    obj.flowLayout32:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout32:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout32:setMinScaledWidth(300);
+    obj.flowLayout32:setMaxScaledWidth(600);
+    obj.flowLayout32:setVertAlign("leading");
 
     obj.flowPart61 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart61:setParent(obj.flowLayout26);
+    obj.flowPart61:setParent(obj.flowLayout32);
     obj.flowPart61:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart61:setName("flowPart61");
     obj.flowPart61:setAvoidScale(true);
@@ -5063,7 +5273,7 @@ self.flwMagicRecordList5._recalcHeight();
     obj.edit40:setFontColor("white");
 
     obj.flwMagicRecordList6 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList6:setParent(obj.flowLayout26);
+    obj.flwMagicRecordList6:setParent(obj.flowLayout32);
     obj.flwMagicRecordList6:setMinWidth(300);
     obj.flwMagicRecordList6:setMaxWidth(600);
     obj.flwMagicRecordList6:setMinScaledWidth(280);
@@ -5109,21 +5319,21 @@ self.flwMagicRecordList5._recalcHeight();
 self.flwMagicRecordList6._recalcHeight();
 
 
-    obj.flowLayout27 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout27:setParent(obj.flowLayout20);
-    obj.flowLayout27:setHeight(100);
-    obj.flowLayout27:setAvoidScale(true);
-    obj.flowLayout27:setMaxControlsPerLine(1);
-    obj.flowLayout27:setAutoHeight(true);
-    obj.flowLayout27:setName("flowLayout27");
-    obj.flowLayout27:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout27:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout27:setMinScaledWidth(300);
-    obj.flowLayout27:setMaxScaledWidth(600);
-    obj.flowLayout27:setVertAlign("leading");
+    obj.flowLayout33 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout33:setParent(obj.flowLayout26);
+    obj.flowLayout33:setHeight(100);
+    obj.flowLayout33:setAvoidScale(true);
+    obj.flowLayout33:setMaxControlsPerLine(1);
+    obj.flowLayout33:setAutoHeight(true);
+    obj.flowLayout33:setName("flowLayout33");
+    obj.flowLayout33:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout33:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout33:setMinScaledWidth(300);
+    obj.flowLayout33:setMaxScaledWidth(600);
+    obj.flowLayout33:setVertAlign("leading");
 
     obj.flowPart62 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart62:setParent(obj.flowLayout27);
+    obj.flowPart62:setParent(obj.flowLayout33);
     obj.flowPart62:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart62:setName("flowPart62");
     obj.flowPart62:setAvoidScale(true);
@@ -5167,7 +5377,7 @@ self.flwMagicRecordList6._recalcHeight();
     obj.edit42:setFontColor("white");
 
     obj.flwMagicRecordList7 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList7:setParent(obj.flowLayout27);
+    obj.flwMagicRecordList7:setParent(obj.flowLayout33);
     obj.flwMagicRecordList7:setMinWidth(300);
     obj.flwMagicRecordList7:setMaxWidth(600);
     obj.flwMagicRecordList7:setMinScaledWidth(280);
@@ -5213,21 +5423,21 @@ self.flwMagicRecordList6._recalcHeight();
 self.flwMagicRecordList7._recalcHeight();
 
 
-    obj.flowLayout28 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout28:setParent(obj.flowLayout20);
-    obj.flowLayout28:setHeight(100);
-    obj.flowLayout28:setAvoidScale(true);
-    obj.flowLayout28:setMaxControlsPerLine(1);
-    obj.flowLayout28:setAutoHeight(true);
-    obj.flowLayout28:setName("flowLayout28");
-    obj.flowLayout28:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout28:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout28:setMinScaledWidth(300);
-    obj.flowLayout28:setMaxScaledWidth(600);
-    obj.flowLayout28:setVertAlign("leading");
+    obj.flowLayout34 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout34:setParent(obj.flowLayout26);
+    obj.flowLayout34:setHeight(100);
+    obj.flowLayout34:setAvoidScale(true);
+    obj.flowLayout34:setMaxControlsPerLine(1);
+    obj.flowLayout34:setAutoHeight(true);
+    obj.flowLayout34:setName("flowLayout34");
+    obj.flowLayout34:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout34:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout34:setMinScaledWidth(300);
+    obj.flowLayout34:setMaxScaledWidth(600);
+    obj.flowLayout34:setVertAlign("leading");
 
     obj.flowPart63 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart63:setParent(obj.flowLayout28);
+    obj.flowPart63:setParent(obj.flowLayout34);
     obj.flowPart63:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart63:setName("flowPart63");
     obj.flowPart63:setAvoidScale(true);
@@ -5271,7 +5481,7 @@ self.flwMagicRecordList7._recalcHeight();
     obj.edit44:setFontColor("white");
 
     obj.flwMagicRecordList8 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList8:setParent(obj.flowLayout28);
+    obj.flwMagicRecordList8:setParent(obj.flowLayout34);
     obj.flwMagicRecordList8:setMinWidth(300);
     obj.flwMagicRecordList8:setMaxWidth(600);
     obj.flwMagicRecordList8:setMinScaledWidth(280);
@@ -5317,21 +5527,21 @@ self.flwMagicRecordList7._recalcHeight();
 self.flwMagicRecordList8._recalcHeight();
 
 
-    obj.flowLayout29 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout29:setParent(obj.flowLayout20);
-    obj.flowLayout29:setHeight(100);
-    obj.flowLayout29:setAvoidScale(true);
-    obj.flowLayout29:setMaxControlsPerLine(1);
-    obj.flowLayout29:setAutoHeight(true);
-    obj.flowLayout29:setName("flowLayout29");
-    obj.flowLayout29:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout29:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout29:setMinScaledWidth(300);
-    obj.flowLayout29:setMaxScaledWidth(600);
-    obj.flowLayout29:setVertAlign("leading");
+    obj.flowLayout35 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout35:setParent(obj.flowLayout26);
+    obj.flowLayout35:setHeight(100);
+    obj.flowLayout35:setAvoidScale(true);
+    obj.flowLayout35:setMaxControlsPerLine(1);
+    obj.flowLayout35:setAutoHeight(true);
+    obj.flowLayout35:setName("flowLayout35");
+    obj.flowLayout35:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout35:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout35:setMinScaledWidth(300);
+    obj.flowLayout35:setMaxScaledWidth(600);
+    obj.flowLayout35:setVertAlign("leading");
 
     obj.flowPart64 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart64:setParent(obj.flowLayout29);
+    obj.flowPart64:setParent(obj.flowLayout35);
     obj.flowPart64:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart64:setName("flowPart64");
     obj.flowPart64:setAvoidScale(true);
@@ -5375,7 +5585,7 @@ self.flwMagicRecordList8._recalcHeight();
     obj.edit46:setFontColor("white");
 
     obj.flwMagicRecordList9 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList9:setParent(obj.flowLayout29);
+    obj.flwMagicRecordList9:setParent(obj.flowLayout35);
     obj.flwMagicRecordList9:setMinWidth(300);
     obj.flwMagicRecordList9:setMaxWidth(600);
     obj.flwMagicRecordList9:setMinScaledWidth(280);
@@ -5421,21 +5631,21 @@ self.flwMagicRecordList8._recalcHeight();
 self.flwMagicRecordList9._recalcHeight();
 
 
-    obj.flowLayout30 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout30:setParent(obj.flowLayout20);
-    obj.flowLayout30:setHeight(100);
-    obj.flowLayout30:setAvoidScale(true);
-    obj.flowLayout30:setMaxControlsPerLine(1);
-    obj.flowLayout30:setAutoHeight(true);
-    obj.flowLayout30:setName("flowLayout30");
-    obj.flowLayout30:setMargins({left=10, right=10, top=4, bottom=4});
-    obj.flowLayout30:setStepSizes({310, 360, 420, 600});
-    obj.flowLayout30:setMinScaledWidth(300);
-    obj.flowLayout30:setMaxScaledWidth(600);
-    obj.flowLayout30:setVertAlign("leading");
+    obj.flowLayout36 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout36:setParent(obj.flowLayout26);
+    obj.flowLayout36:setHeight(100);
+    obj.flowLayout36:setAvoidScale(true);
+    obj.flowLayout36:setMaxControlsPerLine(1);
+    obj.flowLayout36:setAutoHeight(true);
+    obj.flowLayout36:setName("flowLayout36");
+    obj.flowLayout36:setMargins({left=10, right=10, top=4, bottom=4});
+    obj.flowLayout36:setStepSizes({310, 360, 420, 600});
+    obj.flowLayout36:setMinScaledWidth(300);
+    obj.flowLayout36:setMaxScaledWidth(600);
+    obj.flowLayout36:setVertAlign("leading");
 
     obj.flowPart65 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart65:setParent(obj.flowLayout30);
+    obj.flowPart65:setParent(obj.flowLayout36);
     obj.flowPart65:setFrameStyle("frames/magicHeader/header1.xml");
     obj.flowPart65:setName("flowPart65");
     obj.flowPart65:setAvoidScale(true);
@@ -5479,7 +5689,7 @@ self.flwMagicRecordList9._recalcHeight();
     obj.edit48:setFontColor("white");
 
     obj.flwMagicRecordList10 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwMagicRecordList10:setParent(obj.flowLayout30);
+    obj.flwMagicRecordList10:setParent(obj.flowLayout36);
     obj.flwMagicRecordList10:setMinWidth(300);
     obj.flwMagicRecordList10:setMaxWidth(600);
     obj.flwMagicRecordList10:setMinScaledWidth(280);
@@ -5545,6 +5755,248 @@ self.flwMagicRecordList10._recalcHeight();
     obj.textEditor11:setMargins({left=2, right=2, top=2, bottom=2});
     obj.textEditor11:setName("textEditor11");
     obj.textEditor11:setTransparent(true);
+
+    obj.tab6 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab6:setParent(obj.pgcPrincipal);
+    obj.tab6:setTitle("Ações");
+    obj.tab6:setName("tab6");
+
+    obj.frmFichaTeste = GUI.fromHandle(_obj_newObject("form"));
+    obj.frmFichaTeste:setParent(obj.tab6);
+    obj.frmFichaTeste:setFormType("sheetTemplate");
+    obj.frmFichaTeste:setDataType("br.com.meusite.MeuDataType");
+    obj.frmFichaTeste:setTitle("Ficha de Teste");
+    obj.frmFichaTeste:setName("frmFichaTeste");
+
+
+        -- força
+                local function dadosTesteResistenciaForca()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusforca, "Teste de resistência - Força",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosAtletismo()            
+                        -- obter a mesa do personagem
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+        
+                        mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusatletismo, "Atletismo",
+                                function (rolado)
+                                end);          
+                                end;                   
+       
+
+
+        -- destreza
+                local function dadosTesteResistenciaDestreza()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusdestreza, "Teste de resistência - Destreza",
+                        function (rolado)
+                        end);          
+                        end;        
+
+                local function dadosAcrobacia()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusacrobacia, "Acrobacia",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosFurtividade()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusfurtividade, "Furtividade",
+                        function (rolado)
+                        end);          
+                        end; 
+                        
+                local function dadosPrestidigitacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusprestidigitacao, "Prestidigitação",
+                        function (rolado)
+                        end);          
+                        end; 
+                
+                                
+        -- constituição
+                local function dadosTesteResistenciaConstituicao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusconstituicao, "Teste de resistência - Constituição",
+                        function (rolado)
+                        end);          
+                        end;  
+
+        -- inteligência
+                local function dadosTesteResistenciaInteligencia()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusinteligencia, "Teste de resistência - Inteligência",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosArcanismo()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusarcanismo, "Arcanismo",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosHistoria()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonushistoria, "História",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosInvestigacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusinvestigacao, "Investigação",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosNatureza()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusnatureza, "Natureza",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosReligiao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusreligiao, "Religião",
+                        function (rolado)
+                        end);          
+                        end; 
+
+        -- sabedoria
+                local function dadosTesteResistenciaSabedoria()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonussabedoria, "Teste de resistência - Sabedoria",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosAdestrarAnimais()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusadestrarAnimais, "Adestrar animais",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosIntuicao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusintuicao, "Intuição",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosMedicina()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusmedicina, "Medicina",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosPercepcao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonuspercepcao, "Percepção",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosSobrevivencia()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonussobrevivencia, "Sobrevivência",
+                        function (rolado)
+                        end);          
+                        end; 
+        -- carisma
+                local function dadosTesteResistenciaCarisma()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonuscarisma, "Teste de resistência - Carisma",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosAtuacao()            
+                        -- obter a mesa do personagem
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                        mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusatuacao, "Atuação",
+                                function (rolado)
+                                end);          
+                                end; 
+
+                local function dadosEnganacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusenganacao, "Enganação",
+                        function (rolado)
+                        end);          
+                                end; 
+
+                local function dadosIntimidacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusintimidacao, "Intimidação",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosPersuasao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonuspersuasao, "Persuasão",
+                        function (rolado)
+                        end);          
+                        end; 
+
+
+
+        
+
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -5670,7 +6122,17 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event3 = obj.dataLink4:addEventListener("onChange",
+    obj._e_event3 = obj.button1:addEventListener("onClick",
+        function (_)
+            dadosTesteResistenciaForca()
+        end, obj);
+
+    obj._e_event4 = obj.button2:addEventListener("onClick",
+        function (_)
+            dadosAtletismo()
+        end, obj);
+
+    obj._e_event5 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -5700,7 +6162,7 @@ self.flwMagicRecordList10._recalcHeight();
             				end;
         end, obj);
 
-    obj._e_event4 = obj.dataLink5:addEventListener("onChange",
+    obj._e_event6 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temResistencia;
@@ -5747,7 +6209,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event5 = obj.dataLink6:addEventListener("onChange",
+    obj._e_event7 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -5794,7 +6256,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event6 = obj.dataLink7:addEventListener("onChange",
+    obj._e_event8 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -5841,7 +6303,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event7 = obj.dataLink8:addEventListener("onChange",
+    obj._e_event9 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -5888,7 +6350,27 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event8 = obj.dataLink9:addEventListener("onChange",
+    obj._e_event10 = obj.button3:addEventListener("onClick",
+        function (_)
+            dadosTesteResistenciaDestreza()
+        end, obj);
+
+    obj._e_event11 = obj.button4:addEventListener("onClick",
+        function (_)
+            dadosAcrobacia()
+        end, obj);
+
+    obj._e_event12 = obj.button5:addEventListener("onClick",
+        function (_)
+            dadosFurtividade()
+        end, obj);
+
+    obj._e_event13 = obj.button6:addEventListener("onClick",
+        function (_)
+            dadosPrestidigitacao()
+        end, obj);
+
+    obj._e_event14 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -5918,7 +6400,7 @@ self.flwMagicRecordList10._recalcHeight();
             				end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
+    obj._e_event15 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temResistencia;
@@ -5965,7 +6447,12 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
+    obj._e_event16 = obj.button7:addEventListener("onClick",
+        function (_)
+            dadosTesteResistenciaConstituicao()
+        end, obj);
+
+    obj._e_event17 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -5995,7 +6482,7 @@ self.flwMagicRecordList10._recalcHeight();
             				end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
+    obj._e_event18 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temResistencia;
@@ -6042,7 +6529,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6089,7 +6576,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
+    obj._e_event20 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6136,7 +6623,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
+    obj._e_event21 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6183,7 +6670,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event22 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6230,7 +6717,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event16 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event23 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6277,7 +6764,37 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event17 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event24 = obj.button8:addEventListener("onClick",
+        function (_)
+            dadosTesteResistenciaInteligencia()
+        end, obj);
+
+    obj._e_event25 = obj.button9:addEventListener("onClick",
+        function (_)
+            dadosArcanismo()
+        end, obj);
+
+    obj._e_event26 = obj.button10:addEventListener("onClick",
+        function (_)
+            dadosHistoria()
+        end, obj);
+
+    obj._e_event27 = obj.button11:addEventListener("onClick",
+        function (_)
+            dadosInvestigacao()
+        end, obj);
+
+    obj._e_event28 = obj.button12:addEventListener("onClick",
+        function (_)
+            dadosNatureza()
+        end, obj);
+
+    obj._e_event29 = obj.button13:addEventListener("onClick",
+        function (_)
+            dadosReligiao()
+        end, obj);
+
+    obj._e_event30 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -6307,7 +6824,7 @@ self.flwMagicRecordList10._recalcHeight();
             				end;
         end, obj);
 
-    obj._e_event18 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event31 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temResistencia;
@@ -6354,7 +6871,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event19 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event32 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6401,7 +6918,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event20 = obj.dataLink21:addEventListener("onChange",
+    obj._e_event33 = obj.dataLink21:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6448,7 +6965,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event21 = obj.dataLink22:addEventListener("onChange",
+    obj._e_event34 = obj.dataLink22:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6495,7 +7012,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event22 = obj.dataLink23:addEventListener("onChange",
+    obj._e_event35 = obj.dataLink23:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6542,7 +7059,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event23 = obj.dataLink24:addEventListener("onChange",
+    obj._e_event36 = obj.dataLink24:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6589,7 +7106,37 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event24 = obj.dataLink25:addEventListener("onChange",
+    obj._e_event37 = obj.button14:addEventListener("onClick",
+        function (_)
+            dadosTesteResistenciaSabedoria()
+        end, obj);
+
+    obj._e_event38 = obj.button15:addEventListener("onClick",
+        function (_)
+            dadosAdestrarAnimais()
+        end, obj);
+
+    obj._e_event39 = obj.button16:addEventListener("onClick",
+        function (_)
+            dadosIntuicao()
+        end, obj);
+
+    obj._e_event40 = obj.button17:addEventListener("onClick",
+        function (_)
+            dadosMedicina()
+        end, obj);
+
+    obj._e_event41 = obj.button18:addEventListener("onClick",
+        function (_)
+            dadosPercepcao()
+        end, obj);
+
+    obj._e_event42 = obj.button19:addEventListener("onClick",
+        function (_)
+            dadosSobrevivencia()
+        end, obj);
+
+    obj._e_event43 = obj.dataLink25:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -6619,7 +7166,7 @@ self.flwMagicRecordList10._recalcHeight();
             				end;
         end, obj);
 
-    obj._e_event25 = obj.dataLink26:addEventListener("onChange",
+    obj._e_event44 = obj.dataLink26:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temResistencia;
@@ -6666,7 +7213,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event26 = obj.dataLink27:addEventListener("onChange",
+    obj._e_event45 = obj.dataLink27:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6713,7 +7260,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event27 = obj.dataLink28:addEventListener("onChange",
+    obj._e_event46 = obj.dataLink28:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6760,7 +7307,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event28 = obj.dataLink29:addEventListener("onChange",
+    obj._e_event47 = obj.dataLink29:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6807,7 +7354,7 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event29 = obj.dataLink30:addEventListener("onChange",
+    obj._e_event48 = obj.dataLink30:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local modificador;
             							local temPericia;
@@ -6854,7 +7401,32 @@ self.flwMagicRecordList10._recalcHeight();
             							end;
         end, obj);
 
-    obj._e_event30 = obj.fraAliadosOrganizacoes:addEventListener("onBeforeLayoutCalc",
+    obj._e_event49 = obj.button20:addEventListener("onClick",
+        function (_)
+            dadosTesteResistenciaCarisma()
+        end, obj);
+
+    obj._e_event50 = obj.button21:addEventListener("onClick",
+        function (_)
+            dadosAtuacao()
+        end, obj);
+
+    obj._e_event51 = obj.button22:addEventListener("onClick",
+        function (_)
+            dadosEnganacao()
+        end, obj);
+
+    obj._e_event52 = obj.button23:addEventListener("onClick",
+        function (_)
+            dadosIntimidacao()
+        end, obj);
+
+    obj._e_event53 = obj.button24:addEventListener("onClick",
+        function (_)
+            dadosPersuasao()
+        end, obj);
+
+    obj._e_event54 = obj.fraAliadosOrganizacoes:addEventListener("onBeforeLayoutCalc",
         function (_)
             if self.fraAliadosOrganizacoes:getWidth() <= 500 then
             									self.prtAliados:setHeight(200);
@@ -6865,62 +7437,62 @@ self.flwMagicRecordList10._recalcHeight();
             								end;
         end, obj);
 
-    obj._e_event31 = obj.labEquipAtackTit:addEventListener("onResize",
+    obj._e_event55 = obj.labEquipAtackTit:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsEAtaques();
         end, obj);
 
-    obj._e_event32 = obj.rclEquips:addEventListener("onResize",
+    obj._e_event56 = obj.rclEquips:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsEAtaques();
         end, obj);
 
-    obj._e_event33 = obj.btnEquipAtackNew:addEventListener("onClick",
+    obj._e_event57 = obj.btnEquipAtackNew:addEventListener("onClick",
         function (_)
             self.rclEquips:append();
         end, obj);
 
-    obj._e_event34 = obj.labEquipDefense:addEventListener("onResize",
+    obj._e_event58 = obj.labEquipDefense:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event35 = obj.rclEquipsDefense:addEventListener("onResize",
+    obj._e_event59 = obj.rclEquipsDefense:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event36 = obj.btnEquipDefenseNew:addEventListener("onClick",
+    obj._e_event60 = obj.btnEquipDefenseNew:addEventListener("onClick",
         function (_)
             self.rclEquipsDefense:append();
         end, obj);
 
-    obj._e_event37 = obj.label92:addEventListener("onResize",
+    obj._e_event61 = obj.label92:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event38 = obj.labupperGridMagicBox1:addEventListener("onResize",
+    obj._e_event62 = obj.labupperGridMagicBox1:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox1._RecalcSize();
         end, obj);
 
-    obj._e_event39 = obj.labupperGridMagicBox2:addEventListener("onResize",
+    obj._e_event63 = obj.labupperGridMagicBox2:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox2._RecalcSize();
         end, obj);
 
-    obj._e_event40 = obj.labupperGridMagicBox3:addEventListener("onResize",
+    obj._e_event64 = obj.labupperGridMagicBox3:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox3._RecalcSize();
         end, obj);
 
-    obj._e_event41 = obj.labupperGridMagicEditBox1:addEventListener("onResize",
+    obj._e_event65 = obj.labupperGridMagicEditBox1:addEventListener("onResize",
         function (_)
             self.upperGridMagicEditBox1._RecalcSize();
         end, obj);
 
-    obj._e_event42 = obj.dataLink31:addEventListener("onChange",
+    obj._e_event66 = obj.dataLink31:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local hab;
             					local bonusProficiencia;
@@ -6971,107 +7543,131 @@ self.flwMagicRecordList10._recalcHeight();
             					end;
         end, obj);
 
-    obj._e_event43 = obj.rclflwMagicRecordList1:addEventListener("onResize",
+    obj._e_event67 = obj.rclflwMagicRecordList1:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList1._recalcHeight();
         end, obj);
 
-    obj._e_event44 = obj.btnNovoflwMagicRecordList1:addEventListener("onClick",
+    obj._e_event68 = obj.btnNovoflwMagicRecordList1:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList1:append();
         end, obj);
 
-    obj._e_event45 = obj.rclflwMagicRecordList2:addEventListener("onResize",
+    obj._e_event69 = obj.rclflwMagicRecordList2:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList2._recalcHeight();
         end, obj);
 
-    obj._e_event46 = obj.btnNovoflwMagicRecordList2:addEventListener("onClick",
+    obj._e_event70 = obj.btnNovoflwMagicRecordList2:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList2:append();
         end, obj);
 
-    obj._e_event47 = obj.rclflwMagicRecordList3:addEventListener("onResize",
+    obj._e_event71 = obj.rclflwMagicRecordList3:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList3._recalcHeight();
         end, obj);
 
-    obj._e_event48 = obj.btnNovoflwMagicRecordList3:addEventListener("onClick",
+    obj._e_event72 = obj.btnNovoflwMagicRecordList3:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList3:append();
         end, obj);
 
-    obj._e_event49 = obj.rclflwMagicRecordList4:addEventListener("onResize",
+    obj._e_event73 = obj.rclflwMagicRecordList4:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList4._recalcHeight();
         end, obj);
 
-    obj._e_event50 = obj.btnNovoflwMagicRecordList4:addEventListener("onClick",
+    obj._e_event74 = obj.btnNovoflwMagicRecordList4:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList4:append();
         end, obj);
 
-    obj._e_event51 = obj.rclflwMagicRecordList5:addEventListener("onResize",
+    obj._e_event75 = obj.rclflwMagicRecordList5:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList5._recalcHeight();
         end, obj);
 
-    obj._e_event52 = obj.btnNovoflwMagicRecordList5:addEventListener("onClick",
+    obj._e_event76 = obj.btnNovoflwMagicRecordList5:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList5:append();
         end, obj);
 
-    obj._e_event53 = obj.rclflwMagicRecordList6:addEventListener("onResize",
+    obj._e_event77 = obj.rclflwMagicRecordList6:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList6._recalcHeight();
         end, obj);
 
-    obj._e_event54 = obj.btnNovoflwMagicRecordList6:addEventListener("onClick",
+    obj._e_event78 = obj.btnNovoflwMagicRecordList6:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList6:append();
         end, obj);
 
-    obj._e_event55 = obj.rclflwMagicRecordList7:addEventListener("onResize",
+    obj._e_event79 = obj.rclflwMagicRecordList7:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList7._recalcHeight();
         end, obj);
 
-    obj._e_event56 = obj.btnNovoflwMagicRecordList7:addEventListener("onClick",
+    obj._e_event80 = obj.btnNovoflwMagicRecordList7:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList7:append();
         end, obj);
 
-    obj._e_event57 = obj.rclflwMagicRecordList8:addEventListener("onResize",
+    obj._e_event81 = obj.rclflwMagicRecordList8:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList8._recalcHeight();
         end, obj);
 
-    obj._e_event58 = obj.btnNovoflwMagicRecordList8:addEventListener("onClick",
+    obj._e_event82 = obj.btnNovoflwMagicRecordList8:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList8:append();
         end, obj);
 
-    obj._e_event59 = obj.rclflwMagicRecordList9:addEventListener("onResize",
+    obj._e_event83 = obj.rclflwMagicRecordList9:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList9._recalcHeight();
         end, obj);
 
-    obj._e_event60 = obj.btnNovoflwMagicRecordList9:addEventListener("onClick",
+    obj._e_event84 = obj.btnNovoflwMagicRecordList9:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList9:append();
         end, obj);
 
-    obj._e_event61 = obj.rclflwMagicRecordList10:addEventListener("onResize",
+    obj._e_event85 = obj.rclflwMagicRecordList10:addEventListener("onResize",
         function (_)
             self.flwMagicRecordList10._recalcHeight();
         end, obj);
 
-    obj._e_event62 = obj.btnNovoflwMagicRecordList10:addEventListener("onClick",
+    obj._e_event86 = obj.btnNovoflwMagicRecordList10:addEventListener("onClick",
         function (_)
             self.rclflwMagicRecordList10:append();
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event86);
+        __o_rrpgObjs.removeEventListenerById(self._e_event85);
+        __o_rrpgObjs.removeEventListenerById(self._e_event84);
+        __o_rrpgObjs.removeEventListenerById(self._e_event83);
+        __o_rrpgObjs.removeEventListenerById(self._e_event82);
+        __o_rrpgObjs.removeEventListenerById(self._e_event81);
+        __o_rrpgObjs.removeEventListenerById(self._e_event80);
+        __o_rrpgObjs.removeEventListenerById(self._e_event79);
+        __o_rrpgObjs.removeEventListenerById(self._e_event78);
+        __o_rrpgObjs.removeEventListenerById(self._e_event77);
+        __o_rrpgObjs.removeEventListenerById(self._e_event76);
+        __o_rrpgObjs.removeEventListenerById(self._e_event75);
+        __o_rrpgObjs.removeEventListenerById(self._e_event74);
+        __o_rrpgObjs.removeEventListenerById(self._e_event73);
+        __o_rrpgObjs.removeEventListenerById(self._e_event72);
+        __o_rrpgObjs.removeEventListenerById(self._e_event71);
+        __o_rrpgObjs.removeEventListenerById(self._e_event70);
+        __o_rrpgObjs.removeEventListenerById(self._e_event69);
+        __o_rrpgObjs.removeEventListenerById(self._e_event68);
+        __o_rrpgObjs.removeEventListenerById(self._e_event67);
+        __o_rrpgObjs.removeEventListenerById(self._e_event66);
+        __o_rrpgObjs.removeEventListenerById(self._e_event65);
+        __o_rrpgObjs.removeEventListenerById(self._e_event64);
+        __o_rrpgObjs.removeEventListenerById(self._e_event63);
         __o_rrpgObjs.removeEventListenerById(self._e_event62);
         __o_rrpgObjs.removeEventListenerById(self._e_event61);
         __o_rrpgObjs.removeEventListenerById(self._e_event60);
@@ -7152,6 +7748,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.horzLine11 ~= nil then self.horzLine11:destroy(); self.horzLine11 = nil; end;
         if self.flowPart33 ~= nil then self.flowPart33:destroy(); self.flowPart33 = nil; end;
         if self.flowLayout24 ~= nil then self.flowLayout24:destroy(); self.flowLayout24 = nil; end;
+        if self.button15 ~= nil then self.button15:destroy(); self.button15 = nil; end;
         if self.rclflwMagicRecordList7 ~= nil then self.rclflwMagicRecordList7:destroy(); self.rclflwMagicRecordList7 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
         if self.edit41 ~= nil then self.edit41:destroy(); self.edit41 = nil; end;
@@ -7169,14 +7766,15 @@ self.flwMagicRecordList10._recalcHeight();
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
         if self.flowPart32 ~= nil then self.flowPart32:destroy(); self.flowPart32 = nil; end;
         if self.label45 ~= nil then self.label45:destroy(); self.label45 = nil; end;
-        if self.label96 ~= nil then self.label96:destroy(); self.label96 = nil; end;
-        if self.label92 ~= nil then self.label92:destroy(); self.label92 = nil; end;
         if self.flowLayout19 ~= nil then self.flowLayout19:destroy(); self.flowLayout19 = nil; end;
+        if self.label92 ~= nil then self.label92:destroy(); self.label92 = nil; end;
+        if self.label96 ~= nil then self.label96:destroy(); self.label96 = nil; end;
         if self.upperGridMagicBox2 ~= nil then self.upperGridMagicBox2:destroy(); self.upperGridMagicBox2 = nil; end;
         if self.flowLayout1 ~= nil then self.flowLayout1:destroy(); self.flowLayout1 = nil; end;
         if self.flowPart13 ~= nil then self.flowPart13:destroy(); self.flowPart13 = nil; end;
         if self.flwMagicRecordList6 ~= nil then self.flwMagicRecordList6:destroy(); self.flwMagicRecordList6 = nil; end;
         if self.flowPart1 ~= nil then self.flowPart1:destroy(); self.flowPart1 = nil; end;
+        if self.button16 ~= nil then self.button16:destroy(); self.button16 = nil; end;
         if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
         if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
         if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
@@ -7194,8 +7792,8 @@ self.flwMagicRecordList10._recalcHeight();
         if self.flowPart55 ~= nil then self.flowPart55:destroy(); self.flowPart55 = nil; end;
         if self.horzLine19 ~= nil then self.horzLine19:destroy(); self.horzLine19 = nil; end;
         if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
-        if self.linUpperGridCampo7 ~= nil then self.linUpperGridCampo7:destroy(); self.linUpperGridCampo7 = nil; end;
         if self.flowLayout16 ~= nil then self.flowLayout16:destroy(); self.flowLayout16 = nil; end;
+        if self.linUpperGridCampo7 ~= nil then self.linUpperGridCampo7:destroy(); self.linUpperGridCampo7 = nil; end;
         if self.flowPart51 ~= nil then self.flowPart51:destroy(); self.flowPart51 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
@@ -7218,10 +7816,11 @@ self.flwMagicRecordList10._recalcHeight();
         if self.labUpperGridCampo5 ~= nil then self.labUpperGridCampo5:destroy(); self.labUpperGridCampo5 = nil; end;
         if self.imageCheckBox13 ~= nil then self.imageCheckBox13:destroy(); self.imageCheckBox13 = nil; end;
         if self.flowPart34 ~= nil then self.flowPart34:destroy(); self.flowPart34 = nil; end;
-        if self.flowPart54 ~= nil then self.flowPart54:destroy(); self.flowPart54 = nil; end;
-        if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
-        if self.flwMagicRecordList2 ~= nil then self.flwMagicRecordList2:destroy(); self.flwMagicRecordList2 = nil; end;
         if self.flowLayout23 ~= nil then self.flowLayout23:destroy(); self.flowLayout23 = nil; end;
+        if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
+        if self.button21 ~= nil then self.button21:destroy(); self.button21 = nil; end;
+        if self.flowPart54 ~= nil then self.flowPart54:destroy(); self.flowPart54 = nil; end;
+        if self.flwMagicRecordList2 ~= nil then self.flwMagicRecordList2:destroy(); self.flwMagicRecordList2 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
         if self.flowPart53 ~= nil then self.flowPart53:destroy(); self.flowPart53 = nil; end;
@@ -7229,13 +7828,16 @@ self.flwMagicRecordList10._recalcHeight();
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
         if self.flowPart43 ~= nil then self.flowPart43:destroy(); self.flowPart43 = nil; end;
         if self.label76 ~= nil then self.label76:destroy(); self.label76 = nil; end;
+        if self.button4 ~= nil then self.button4:destroy(); self.button4 = nil; end;
         if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
         if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.flowPart57 ~= nil then self.flowPart57:destroy(); self.flowPart57 = nil; end;
         if self.fraUpperGridFrente ~= nil then self.fraUpperGridFrente:destroy(); self.fraUpperGridFrente = nil; end;
+        if self.button7 ~= nil then self.button7:destroy(); self.button7 = nil; end;
         if self.fraUpperGridCaracteristicas ~= nil then self.fraUpperGridCaracteristicas:destroy(); self.fraUpperGridCaracteristicas = nil; end;
         if self.flowLineBreak5 ~= nil then self.flowLineBreak5:destroy(); self.flowLineBreak5 = nil; end;
+        if self.flowLayout33 ~= nil then self.flowLayout33:destroy(); self.flowLayout33 = nil; end;
         if self.label106 ~= nil then self.label106:destroy(); self.label106 = nil; end;
         if self.label103 ~= nil then self.label103:destroy(); self.label103 = nil; end;
         if self.flowPart22 ~= nil then self.flowPart22:destroy(); self.flowPart22 = nil; end;
@@ -7254,6 +7856,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.panupperGridMagicBox3 ~= nil then self.panupperGridMagicBox3:destroy(); self.panupperGridMagicBox3 = nil; end;
         if self.btnNovoflwMagicRecordList6 ~= nil then self.btnNovoflwMagicRecordList6:destroy(); self.btnNovoflwMagicRecordList6 = nil; end;
+        if self.flowLayout31 ~= nil then self.flowLayout31:destroy(); self.flowLayout31 = nil; end;
         if self.imageCheckBox17 ~= nil then self.imageCheckBox17:destroy(); self.imageCheckBox17 = nil; end;
         if self.imageCheckBox21 ~= nil then self.imageCheckBox21:destroy(); self.imageCheckBox21 = nil; end;
         if self.flowPart6 ~= nil then self.flowPart6:destroy(); self.flowPart6 = nil; end;
@@ -7264,6 +7867,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.label91 ~= nil then self.label91:destroy(); self.label91 = nil; end;
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
         if self.flowPart39 ~= nil then self.flowPart39:destroy(); self.flowPart39 = nil; end;
+        if self.frmFichaTeste ~= nil then self.frmFichaTeste:destroy(); self.frmFichaTeste = nil; end;
         if self.layout35 ~= nil then self.layout35:destroy(); self.layout35 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.labUpperGridCampo10 ~= nil then self.labUpperGridCampo10:destroy(); self.labUpperGridCampo10 = nil; end;
@@ -7286,15 +7890,16 @@ self.flwMagicRecordList10._recalcHeight();
         if self.flowLineBreak2 ~= nil then self.flowLineBreak2:destroy(); self.flowLineBreak2 = nil; end;
         if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
         if self.flowPart15 ~= nil then self.flowPart15:destroy(); self.flowPart15 = nil; end;
-        if self.flowLayout8 ~= nil then self.flowLayout8:destroy(); self.flowLayout8 = nil; end;
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
         if self.UpperGridCampo5 ~= nil then self.UpperGridCampo5:destroy(); self.UpperGridCampo5 = nil; end;
+        if self.flowLayout8 ~= nil then self.flowLayout8:destroy(); self.flowLayout8 = nil; end;
         if self.UpperGridCampo10 ~= nil then self.UpperGridCampo10:destroy(); self.UpperGridCampo10 = nil; end;
         if self.layout39 ~= nil then self.layout39:destroy(); self.layout39 = nil; end;
         if self.tab3 ~= nil then self.tab3:destroy(); self.tab3 = nil; end;
         if self.flowPart8 ~= nil then self.flowPart8:destroy(); self.flowPart8 = nil; end;
         if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
         if self.labupperGridMagicBox1 ~= nil then self.labupperGridMagicBox1:destroy(); self.labupperGridMagicBox1 = nil; end;
+        if self.flowLayout32 ~= nil then self.flowLayout32:destroy(); self.flowLayout32 = nil; end;
         if self.flowPart10 ~= nil then self.flowPart10:destroy(); self.flowPart10 = nil; end;
         if self.upperGridMagicEditBox1 ~= nil then self.upperGridMagicEditBox1:destroy(); self.upperGridMagicEditBox1 = nil; end;
         if self.textEditor9 ~= nil then self.textEditor9:destroy(); self.textEditor9 = nil; end;
@@ -7306,8 +7911,8 @@ self.flwMagicRecordList10._recalcHeight();
         if self.flwMagicRecordList9 ~= nil then self.flwMagicRecordList9:destroy(); self.flwMagicRecordList9 = nil; end;
         if self.imageCheckBox4 ~= nil then self.imageCheckBox4:destroy(); self.imageCheckBox4 = nil; end;
         if self.label73 ~= nil then self.label73:destroy(); self.label73 = nil; end;
-        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
         if self.flowLayout18 ~= nil then self.flowLayout18:destroy(); self.flowLayout18 = nil; end;
+        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
         if self.flowPart40 ~= nil then self.flowPart40:destroy(); self.flowPart40 = nil; end;
         if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
         if self.edtUpperGridCampo8 ~= nil then self.edtUpperGridCampo8:destroy(); self.edtUpperGridCampo8 = nil; end;
@@ -7342,6 +7947,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.textEditor11 ~= nil then self.textEditor11:destroy(); self.textEditor11 = nil; end;
         if self.flowLayout20 ~= nil then self.flowLayout20:destroy(); self.flowLayout20 = nil; end;
         if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
+        if self.button13 ~= nil then self.button13:destroy(); self.button13 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.flwMagicRecordList1 ~= nil then self.flwMagicRecordList1:destroy(); self.flwMagicRecordList1 = nil; end;
         if self.frame7 ~= nil then self.frame7:destroy(); self.frame7 = nil; end;
@@ -7364,7 +7970,9 @@ self.flwMagicRecordList10._recalcHeight();
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.label53 ~= nil then self.label53:destroy(); self.label53 = nil; end;
         if self.horzLine9 ~= nil then self.horzLine9:destroy(); self.horzLine9 = nil; end;
+        if self.button24 ~= nil then self.button24:destroy(); self.button24 = nil; end;
         if self.edit21 ~= nil then self.edit21:destroy(); self.edit21 = nil; end;
+        if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
         if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
         if self.labUpperGridCampo4 ~= nil then self.labUpperGridCampo4:destroy(); self.labUpperGridCampo4 = nil; end;
         if self.flowLayout27 ~= nil then self.flowLayout27:destroy(); self.flowLayout27 = nil; end;
@@ -7377,11 +7985,14 @@ self.flwMagicRecordList10._recalcHeight();
         if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
         if self.edtUpperGridCampo10 ~= nil then self.edtUpperGridCampo10:destroy(); self.edtUpperGridCampo10 = nil; end;
         if self.frame2 ~= nil then self.frame2:destroy(); self.frame2 = nil; end;
+        if self.button11 ~= nil then self.button11:destroy(); self.button11 = nil; end;
         if self.label81 ~= nil then self.label81:destroy(); self.label81 = nil; end;
         if self.edtUpperGridCampo7 ~= nil then self.edtUpperGridCampo7:destroy(); self.edtUpperGridCampo7 = nil; end;
         if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
         if self.dataLink22 ~= nil then self.dataLink22:destroy(); self.dataLink22 = nil; end;
         if self.horzLine20 ~= nil then self.horzLine20:destroy(); self.horzLine20 = nil; end;
+        if self.button6 ~= nil then self.button6:destroy(); self.button6 = nil; end;
+        if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
         if self.edit37 ~= nil then self.edit37:destroy(); self.edit37 = nil; end;
         if self.layBottomflwMagicRecordList4 ~= nil then self.layBottomflwMagicRecordList4:destroy(); self.layBottomflwMagicRecordList4 = nil; end;
         if self.flowLayout2 ~= nil then self.flowLayout2:destroy(); self.flowLayout2 = nil; end;
@@ -7391,9 +8002,10 @@ self.flwMagicRecordList10._recalcHeight();
         if self.dataLink27 ~= nil then self.dataLink27:destroy(); self.dataLink27 = nil; end;
         if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
         if self.dataLink30 ~= nil then self.dataLink30:destroy(); self.dataLink30 = nil; end;
-        if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
+        if self.button10 ~= nil then self.button10:destroy(); self.button10 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.labUpperGridCampo6 ~= nil then self.labUpperGridCampo6:destroy(); self.labUpperGridCampo6 = nil; end;
+        if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
         if self.frame5 ~= nil then self.frame5:destroy(); self.frame5 = nil; end;
         if self.textEditor10 ~= nil then self.textEditor10:destroy(); self.textEditor10 = nil; end;
         if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
@@ -7405,6 +8017,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
+        if self.flowLayout36 ~= nil then self.flowLayout36:destroy(); self.flowLayout36 = nil; end;
         if self.label108 ~= nil then self.label108:destroy(); self.label108 = nil; end;
         if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
         if self.flowPart37 ~= nil then self.flowPart37:destroy(); self.flowPart37 = nil; end;
@@ -7412,7 +8025,9 @@ self.flwMagicRecordList10._recalcHeight();
         if self.flowPart45 ~= nil then self.flowPart45:destroy(); self.flowPart45 = nil; end;
         if self.layBottomflwMagicRecordList8 ~= nil then self.layBottomflwMagicRecordList8:destroy(); self.layBottomflwMagicRecordList8 = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
+        if self.button8 ~= nil then self.button8:destroy(); self.button8 = nil; end;
         if self.label50 ~= nil then self.label50:destroy(); self.label50 = nil; end;
+        if self.button18 ~= nil then self.button18:destroy(); self.button18 = nil; end;
         if self.edit42 ~= nil then self.edit42:destroy(); self.edit42 = nil; end;
         if self.scrollBox4 ~= nil then self.scrollBox4:destroy(); self.scrollBox4 = nil; end;
         if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
@@ -7433,8 +8048,8 @@ self.flwMagicRecordList10._recalcHeight();
         if self.UpperGridCampo1 ~= nil then self.UpperGridCampo1:destroy(); self.UpperGridCampo1 = nil; end;
         if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
         if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
-        if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
         if self.flowLayout13 ~= nil then self.flowLayout13:destroy(); self.flowLayout13 = nil; end;
+        if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
         if self.linUpperGridCampo8 ~= nil then self.linUpperGridCampo8:destroy(); self.linUpperGridCampo8 = nil; end;
         if self.flowPart42 ~= nil then self.flowPart42:destroy(); self.flowPart42 = nil; end;
         if self.UpperGridCampo4 ~= nil then self.UpperGridCampo4:destroy(); self.UpperGridCampo4 = nil; end;
@@ -7442,21 +8057,24 @@ self.flwMagicRecordList10._recalcHeight();
         if self.flowLineBreak7 ~= nil then self.flowLineBreak7:destroy(); self.flowLineBreak7 = nil; end;
         if self.horzLine10 ~= nil then self.horzLine10:destroy(); self.horzLine10 = nil; end;
         if self.flowLayout5 ~= nil then self.flowLayout5:destroy(); self.flowLayout5 = nil; end;
+        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.dataLink21 ~= nil then self.dataLink21:destroy(); self.dataLink21 = nil; end;
-        if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.linUpperGridCampo9 ~= nil then self.linUpperGridCampo9:destroy(); self.linUpperGridCampo9 = nil; end;
+        if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
         if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
         if self.label59 ~= nil then self.label59:destroy(); self.label59 = nil; end;
+        if self.button20 ~= nil then self.button20:destroy(); self.button20 = nil; end;
         if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
         if self.edit47 ~= nil then self.edit47:destroy(); self.edit47 = nil; end;
         if self.edtUpperGridCampo5 ~= nil then self.edtUpperGridCampo5:destroy(); self.edtUpperGridCampo5 = nil; end;
         if self.dataLink23 ~= nil then self.dataLink23:destroy(); self.dataLink23 = nil; end;
         if self.label67 ~= nil then self.label67:destroy(); self.label67 = nil; end;
         if self.flowPart16 ~= nil then self.flowPart16:destroy(); self.flowPart16 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.flwPartEquipAtack ~= nil then self.flwPartEquipAtack:destroy(); self.flwPartEquipAtack = nil; end;
         if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
@@ -7502,6 +8120,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
         if self.edtUpperGridCampo3 ~= nil then self.edtUpperGridCampo3:destroy(); self.edtUpperGridCampo3 = nil; end;
         if self.edit23 ~= nil then self.edit23:destroy(); self.edit23 = nil; end;
+        if self.flowLayout35 ~= nil then self.flowLayout35:destroy(); self.flowLayout35 = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
         if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
         if self.flowPart29 ~= nil then self.flowPart29:destroy(); self.flowPart29 = nil; end;
@@ -7529,6 +8148,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.flowLayout6 ~= nil then self.flowLayout6:destroy(); self.flowLayout6 = nil; end;
         if self.dataLink29 ~= nil then self.dataLink29:destroy(); self.dataLink29 = nil; end;
+        if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
         if self.pgcPrincipal ~= nil then self.pgcPrincipal:destroy(); self.pgcPrincipal = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.imageCheckBox6 ~= nil then self.imageCheckBox6:destroy(); self.imageCheckBox6 = nil; end;
@@ -7554,6 +8174,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.edtUpperGridCampo4 ~= nil then self.edtUpperGridCampo4:destroy(); self.edtUpperGridCampo4 = nil; end;
         if self.flowPart49 ~= nil then self.flowPart49:destroy(); self.flowPart49 = nil; end;
         if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
+        if self.tab6 ~= nil then self.tab6:destroy(); self.tab6 = nil; end;
         if self.dataLink31 ~= nil then self.dataLink31:destroy(); self.dataLink31 = nil; end;
         if self.flowPart14 ~= nil then self.flowPart14:destroy(); self.flowPart14 = nil; end;
         if self.label44 ~= nil then self.label44:destroy(); self.label44 = nil; end;
@@ -7610,6 +8231,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.layBottomflwMagicRecordList7 ~= nil then self.layBottomflwMagicRecordList7:destroy(); self.layBottomflwMagicRecordList7 = nil; end;
         if self.flowPart64 ~= nil then self.flowPart64:destroy(); self.flowPart64 = nil; end;
         if self.imageCheckBox18 ~= nil then self.imageCheckBox18:destroy(); self.imageCheckBox18 = nil; end;
+        if self.button22 ~= nil then self.button22:destroy(); self.button22 = nil; end;
         if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
         if self.fraMagiasLayout ~= nil then self.fraMagiasLayout:destroy(); self.fraMagiasLayout = nil; end;
         if self.edtUpperGridCampo11 ~= nil then self.edtUpperGridCampo11:destroy(); self.edtUpperGridCampo11 = nil; end;
@@ -7631,14 +8253,15 @@ self.flwMagicRecordList10._recalcHeight();
         if self.imageCheckBox25 ~= nil then self.imageCheckBox25:destroy(); self.imageCheckBox25 = nil; end;
         if self.labUpperGridCampo7 ~= nil then self.labUpperGridCampo7:destroy(); self.labUpperGridCampo7 = nil; end;
         if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
-        if self.tab4 ~= nil then self.tab4:destroy(); self.tab4 = nil; end;
         if self.flowLayout21 ~= nil then self.flowLayout21:destroy(); self.flowLayout21 = nil; end;
+        if self.tab4 ~= nil then self.tab4:destroy(); self.tab4 = nil; end;
         if self.edit43 ~= nil then self.edit43:destroy(); self.edit43 = nil; end;
         if self.flowLineBreak3 ~= nil then self.flowLineBreak3:destroy(); self.flowLineBreak3 = nil; end;
         if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
         if self.flowLayout11 ~= nil then self.flowLayout11:destroy(); self.flowLayout11 = nil; end;
         if self.label100 ~= nil then self.label100:destroy(); self.label100 = nil; end;
         if self.btnNovoflwMagicRecordList4 ~= nil then self.btnNovoflwMagicRecordList4:destroy(); self.btnNovoflwMagicRecordList4 = nil; end;
+        if self.button23 ~= nil then self.button23:destroy(); self.button23 = nil; end;
         if self.prtFaccao ~= nil then self.prtFaccao:destroy(); self.prtFaccao = nil; end;
         if self.flowPart63 ~= nil then self.flowPart63:destroy(); self.flowPart63 = nil; end;
         if self.labNome1 ~= nil then self.labNome1:destroy(); self.labNome1 = nil; end;
@@ -7648,6 +8271,7 @@ self.flwMagicRecordList10._recalcHeight();
         if self.flowPart11 ~= nil then self.flowPart11:destroy(); self.flowPart11 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
+        if self.button12 ~= nil then self.button12:destroy(); self.button12 = nil; end;
         if self.flowPart36 ~= nil then self.flowPart36:destroy(); self.flowPart36 = nil; end;
         if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
         if self.btnNovoflwMagicRecordList2 ~= nil then self.btnNovoflwMagicRecordList2:destroy(); self.btnNovoflwMagicRecordList2 = nil; end;
@@ -7659,17 +8283,19 @@ self.flwMagicRecordList10._recalcHeight();
         if self.btnNovoflwMagicRecordList1 ~= nil then self.btnNovoflwMagicRecordList1:destroy(); self.btnNovoflwMagicRecordList1 = nil; end;
         if self.layBottomflwMagicRecordList10 ~= nil then self.layBottomflwMagicRecordList10:destroy(); self.layBottomflwMagicRecordList10 = nil; end;
         if self.rclflwMagicRecordList3 ~= nil then self.rclflwMagicRecordList3:destroy(); self.rclflwMagicRecordList3 = nil; end;
+        if self.flowLayout34 ~= nil then self.flowLayout34:destroy(); self.flowLayout34 = nil; end;
         if self.linUpperGridCampo10 ~= nil then self.linUpperGridCampo10:destroy(); self.linUpperGridCampo10 = nil; end;
         if self.linUpperGridCampo6 ~= nil then self.linUpperGridCampo6:destroy(); self.linUpperGridCampo6 = nil; end;
         if self.flowPart17 ~= nil then self.flowPart17:destroy(); self.flowPart17 = nil; end;
-        if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
+        if self.button17 ~= nil then self.button17:destroy(); self.button17 = nil; end;
         if self.label46 ~= nil then self.label46:destroy(); self.label46 = nil; end;
-        if self.edit48 ~= nil then self.edit48:destroy(); self.edit48 = nil; end;
+        if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
         if self.UpperGridCampo12 ~= nil then self.UpperGridCampo12:destroy(); self.UpperGridCampo12 = nil; end;
         if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
         if self.flowLineBreak8 ~= nil then self.flowLineBreak8:destroy(); self.flowLineBreak8 = nil; end;
         if self.flowPart27 ~= nil then self.flowPart27:destroy(); self.flowPart27 = nil; end;
         if self.flowPart61 ~= nil then self.flowPart61:destroy(); self.flowPart61 = nil; end;
+        if self.edit48 ~= nil then self.edit48:destroy(); self.edit48 = nil; end;
         if self.flowPart58 ~= nil then self.flowPart58:destroy(); self.flowPart58 = nil; end;
         if self.btnNovoflwMagicRecordList8 ~= nil then self.btnNovoflwMagicRecordList8:destroy(); self.btnNovoflwMagicRecordList8 = nil; end;
         if self.flwMagicRecordList10 ~= nil then self.flwMagicRecordList10:destroy(); self.flwMagicRecordList10 = nil; end;
@@ -7691,6 +8317,8 @@ self.flwMagicRecordList10._recalcHeight();
         if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
         if self.horzLine24 ~= nil then self.horzLine24:destroy(); self.horzLine24 = nil; end;
         if self.rclflwMagicRecordList4 ~= nil then self.rclflwMagicRecordList4:destroy(); self.rclflwMagicRecordList4 = nil; end;
+        if self.button19 ~= nil then self.button19:destroy(); self.button19 = nil; end;
+        if self.button14 ~= nil then self.button14:destroy(); self.button14 = nil; end;
         if self.flowLineBreak4 ~= nil then self.flowLineBreak4:destroy(); self.flowLineBreak4 = nil; end;
         if self.edtUpperGridCampo12 ~= nil then self.edtUpperGridCampo12:destroy(); self.edtUpperGridCampo12 = nil; end;
         if self.edtupperGridMagicEditBox1 ~= nil then self.edtupperGridMagicEditBox1:destroy(); self.edtupperGridMagicEditBox1 = nil; end;

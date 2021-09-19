@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form formType="sheetTemplate" dataType="br.com.meusite.MeuDataType"
+          title="Ficha de Teste" name="frmFichaTeste">
+
+        
+        <script>
+        -- força
+                local function dadosTesteResistenciaForca()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusforca, "Teste de resistência - Força",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosAtletismo()            
+                        -- obter a mesa do personagem
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+        
+                        mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusatletismo, "Atletismo",
+                                function (rolado)
+                                end);          
+                                end;                   
+       
+
+
+        -- destreza
+                local function dadosTesteResistenciaDestreza()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusdestreza, "Teste de resistência - Destreza",
+                        function (rolado)
+                        end);          
+                        end;        
+
+                local function dadosAcrobacia()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusacrobacia, "Acrobacia",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosFurtividade()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusfurtividade, "Furtividade",
+                        function (rolado)
+                        end);          
+                        end; 
+                        
+                local function dadosPrestidigitacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusprestidigitacao, "Prestidigitação",
+                        function (rolado)
+                        end);          
+                        end; 
+                
+                                
+        -- constituição
+                local function dadosTesteResistenciaConstituicao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusconstituicao, "Teste de resistência - Constituição",
+                        function (rolado)
+                        end);          
+                        end;  
+
+        -- inteligência
+                local function dadosTesteResistenciaInteligencia()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonusinteligencia, "Teste de resistência - Inteligência",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosArcanismo()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusarcanismo, "Arcanismo",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosHistoria()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonushistoria, "História",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosInvestigacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusinvestigacao, "Investigação",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosNatureza()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusnatureza, "Natureza",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosReligiao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusreligiao, "Religião",
+                        function (rolado)
+                        end);          
+                        end; 
+
+        -- sabedoria
+                local function dadosTesteResistenciaSabedoria()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonussabedoria, "Teste de resistência - Sabedoria",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosAdestrarAnimais()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusadestrarAnimais, "Adestrar animais",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosIntuicao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusintuicao, "Intuição",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosMedicina()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusmedicina, "Medicina",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosPercepcao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonuspercepcao, "Percepção",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosSobrevivencia()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonussobrevivencia, "Sobrevivência",
+                        function (rolado)
+                        end);          
+                        end; 
+        -- carisma
+                local function dadosTesteResistenciaCarisma()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.resistencias.bonuscarisma, "Teste de resistência - Carisma",
+                        function (rolado)
+                        end);          
+                        end;  
+
+                local function dadosAtuacao()            
+                        -- obter a mesa do personagem
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                        mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusatuacao, "Atuação",
+                                function (rolado)
+                                end);          
+                                end; 
+
+                local function dadosEnganacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusenganacao, "Enganação",
+                        function (rolado)
+                        end);          
+                                end; 
+
+                local function dadosIntimidacao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonusintimidacao, "Intimidação",
+                        function (rolado)
+                        end);          
+                        end; 
+
+                local function dadosPersuasao()            
+                -- obter a mesa do personagem
+                local mesaDoPersonagem = Firecast.getMesaDe(sheet);        
+
+                mesaDoPersonagem.chat:rolarDados("1d20 + " .. sheet.pericias.bonuspersuasao, "Persuasão",
+                        function (rolado)
+                        end);          
+                        end; 
+
+
+
+        </script> 
+
+        
+
+</form>

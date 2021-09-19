@@ -25,5 +25,9 @@
 				<textEditor align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}"/>
 			</rectangle>
 		</tab>
+
+		<tab title="Ações">
+			<import file="acoes.xml"/>
+		</tab>		
 	</tabControl>		
 </form>
